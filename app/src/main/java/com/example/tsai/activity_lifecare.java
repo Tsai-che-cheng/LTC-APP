@@ -1,0 +1,41 @@
+package com.example.tsai;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.MediaController;
+import android.widget.VideoView;
+
+
+public class activity_lifecare extends AppCompatActivity {
+    private VideoView video;
+    private String videoFile="test";
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_lifecare);
+        video = (VideoView) findViewById(R.id.videoTest);
+        int id = getResources().getIdentifier(videoFile, "raw", this.getPackageName());
+        final String path = "android.resource://" + this.getPackageName() + "/" + id;
+        video.setVideoURI(Uri.parse(path));
+        video.setMediaController(new MediaController(this));
+        video.start();
+    }
+    /*public void onPause(){
+        super.onStop();
+        video.stopPlayback();
+    }*/
+    public void BH  (View v){
+        Intent it = new Intent(activity_lifecare.this,MainActivity.class);
+        startActivity(it);
+        finish();
+    }
+    public void BG  (View v){
+        Intent it = new Intent(activity_lifecare.this,Guideline.class);
+        startActivity(it);
+        finish();
+    }
+}

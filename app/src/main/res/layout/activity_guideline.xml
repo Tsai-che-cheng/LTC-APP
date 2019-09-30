@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    android:layout_gravity="top"
+    tools:context=".Guideline">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent">
+    <Button
+        android:id="@+id/BTH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="BH"
+        android:text="上一頁"
+        android:textSize="40sp"/>
+</LinearLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="85dp"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/BodyClean"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal ="10dp"
+                android:text="基本身體清潔"
+                android:textSize="40dp"
+                android:onClick="TBC"/>
+
+            <Button
+                android:id="@+id/LifeCare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="基本日常照顧"
+                android:textSize="40dp"
+                android:onClick="TLC"/>
+
+            <Button
+                android:id="@+id/LifeSign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="基本生命徵象"
+                android:textSize="40dp"
+                android:onClick="TLS"
+                app:layout_constraintTop_toBottomOf="@id/LifeCare" />
+
+            <Button
+                android:id="@+id/NGFeeding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="管灌及餵食"
+                android:textSize="40dp"
+                android:onClick="TNGF"
+                app:layout_constraintTop_toBottomOf="@id/LifeSign" />
+
+            <Button
+                android:id="@+id/TurnOver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="翻身拍背"
+                android:textSize="40dp"
+                android:onClick="TTO"
+                app:layout_constraintTop_toBottomOf="@id/NGFeeding" />
+
+            <Button
+                android:id="@+id/BodyActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="肢體關節活動"
+                android:textSize="40dp"
+                android:onClick="TBA"
+                app:layout_constraintTop_toBottomOf="@id/TurnOver" />
+
+            <Button
+                android:id="@+id/HelpStairs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="協助上(下)樓"
+                android:textSize="40dp"
+                android:onClick="THS"
+                app:layout_constraintTop_toBottomOf="@id/BodyActivity" />
+
+            <Button
+                android:id="@+id/AssistMedical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="協助執行輔助式醫療"
+                android:textSize="40dp"
+                android:onClick="TAM"
+                app:layout_constraintTop_toBottomOf="@id/HelpStairs" />
+
+            <Button
+                android:id="@+id/AssistExcretion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="協助排泄"
+                android:textSize="40dp"
+                android:onClick="TAE"
+                app:layout_constraintTop_toBottomOf="@id/AssistMedical" />
+
+            <Button
+                android:id="@+id/ProfessionCare"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="專業照顧技巧"
+                android:textSize="40dp"
+                android:onClick="TPC"
+                app:layout_constraintTop_toBottomOf="@id/AssistExcretion" />
+
+            <Button
+                android:id="@+id/EmergencyConcept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="急症概念"
+                android:textSize="40dp"
+                android:onClick="TEC"
+                app:layout_constraintTop_toBottomOf="@id/ProfessionCare" />
+
+            <Button
+                android:id="@+id/DeathbedPeaceful"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginHorizontal="10dp"
+                android:text="臨終關懷及認識\n安寧照顧"
+                android:textSize="40dp"
+                android:onClick="TDP"
+                app:layout_constraintTop_toBottomOf="@id/EmergencyConcept" />
+            </LinearLayout>
+        </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
