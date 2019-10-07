@@ -1,6 +1,6 @@
-# LTC-APP
+# HC-APP
 
-To take care for the  elderly.
+To take home care for the people in need.
 
 ## Getting Started
 
