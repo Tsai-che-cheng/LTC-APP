@@ -21,7 +21,7 @@ First, on your workspace git clone the project
 
 ```
 $ cd $WORKSPACE
-$ git clone https://github.com/Tsai-che-cheng/LTC-APP.git
+$ git clone https://github.com/Tsai-che-cheng/HC-APP.git
 ```
 
 Then, open the project on your Android Studio and compile it.
