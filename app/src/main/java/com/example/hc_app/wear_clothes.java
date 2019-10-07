@@ -1,14 +1,10 @@
 package com.example.hc_app;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.tsai.MainActivity;
-import com.example.tsai.R;
-import com.example.tsai.activity_bodyclean;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class wear_clothes extends AppCompatActivity {
 

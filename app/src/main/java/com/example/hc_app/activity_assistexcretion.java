@@ -1,10 +1,10 @@
-package com.example.tsai;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.hc_app;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class activity_assistexcretion extends AppCompatActivity {
 
@@ -14,13 +14,10 @@ public class activity_assistexcretion extends AppCompatActivity {
         setContentView(R.layout.activity_assistexcretion);
     }
     public void BH  (View v){
-        Intent it = new Intent(activity_assistexcretion.this,MainActivity.class);
-        startActivity(it);
-        finish();
+        activity_assistexcretion.this.finish();
     }
     public void BG  (View v){
-        Intent it = new Intent(activity_assistexcretion.this,Guideline.class);
+        Intent it = new Intent(activity_assistexcretion.this, GuidelineActivity.class);
         startActivity(it);
-        finish();
     }
 }

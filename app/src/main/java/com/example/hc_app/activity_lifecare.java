@@ -1,6 +1,4 @@
-package com.example.tsai;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.hc_app;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -8,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.MediaController;
 import android.widget.VideoView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 
 public class activity_lifecare extends AppCompatActivity {
@@ -31,11 +31,9 @@ public class activity_lifecare extends AppCompatActivity {
     public void BH  (View v){
         Intent it = new Intent(activity_lifecare.this,MainActivity.class);
         startActivity(it);
-        finish();
     }
     public void BG  (View v){
-        Intent it = new Intent(activity_lifecare.this,Guideline.class);
+        Intent it = new Intent(activity_lifecare.this, GuidelineActivity.class);
         startActivity(it);
-        finish();
     }
 }

@@ -1,10 +1,10 @@
-package com.example.tsai;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.hc_app;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class activity_helpstairs extends AppCompatActivity {
 
@@ -16,11 +16,9 @@ public class activity_helpstairs extends AppCompatActivity {
     public void BH  (View v){
         Intent it = new Intent(activity_helpstairs.this,MainActivity.class);
         startActivity(it);
-        finish();
     }
     public void BG  (View v){
-        Intent it = new Intent(activity_helpstairs.this,Guideline.class);
+        Intent it = new Intent(activity_helpstairs.this, GuidelineActivity.class);
         startActivity(it);
-        finish();
     }
 }

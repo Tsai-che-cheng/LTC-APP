@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:dist="http://schemas.android.com/apk/distribution"
-    package="com.example.tsai">
+    package="com.example.hc_app">
 
     <dist:module dist:instant="true" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -58,7 +59,9 @@
         <activity
             android:name=".activity_lifecare"
             android:label="基本日常照顧" />
-        <activity android:name=".Guideline" />
+        <activity android:name=".GuidelineActivity"
+            android:label="照顧指引"
+            android:logo="@drawable/ic_launcher_foreground"/>
         <activity
             android:name=".MainActivity"
             android:label="居家照顧指引"
@@ -69,6 +72,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:label="Settinhs" />
+        <activity
+            android:name=".WebViewActivity"
+            android:label="WebView" />
+
     </application>
 
 </manifest>
