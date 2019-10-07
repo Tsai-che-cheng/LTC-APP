@@ -1,6 +1,8 @@
 package com.example.tsai;
 
 import android.os.Bundle;
+import android.view.KeyEvent;
+import android.webkit.WebResourceResponse;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -8,7 +10,12 @@ import android.webkit.WebViewClient;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class WebViewActivity extends AppCompatActivity {
+public class WebViewActivity extends AppCompatActivity{
+
+    private WebView myWebView;
+    private WebViewClient myWebViewClient;
+
+    private boolean formResponseFlag = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,12 +28,39 @@ public class WebViewActivity extends AppCompatActivity {
             actionBar.hide();
         }
 
-        WebView myWebView = findViewById(R.id.webview);
+        myWebView = findViewById(R.id.webview);
+        myWebViewClient = new WebViewClient(){
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                /*
+                if (url.contains("blog.csdn.net")){
+                    view.loadUrl("https://www.google.com");
+                }
+                */
+                // finish();
+                return false;
+            }
+            @Override
+            public WebResourceResponse shouldInterceptRequest(WebView view, String url) {
+                if ((url.startsWith("http") || url.startsWith("https")) && url.contains("formResponse")) {
+                    formResponseFlag = true;    // for future use...
+                    finish();
+                }
+                return super.shouldInterceptRequest(view, url);
+            }
+        };
+
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
-        myWebView.setWebViewClient(new WebViewClient());
-        // myWebView.loadUrl("https://forms.gle/QxCeM54KMK1Xu48K8");
+        myWebView.setWebViewClient(myWebViewClient);
         myWebView.loadUrl("https://docs.google.com/forms/d/e/1FAIpQLScd-qGgwRtVHZP2u5AwcU87IwK1QI65holtWLIpt3WKrRn0cA/viewform");
-        // myWebView.loadUrl("https://www.google.com");
+    }
+    @Override
+    public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if(keyCode == KeyEvent.KEYCODE_BACK && myWebView.canGoBack()){
+            myWebView.goBack();
+            return true;
+        }
+        return super.onKeyDown(keyCode, event);
     }
 }
