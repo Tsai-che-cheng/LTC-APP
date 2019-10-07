@@ -12,14 +12,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity_deathbedpeaceful"
-            android:label="臨終關懷及認識安寧照顧"></activity>
+        <activity android:name="com.example.hc_app.clean_body"
+            android:label="床上洗澡"/>
+        <activity android:name="com.example.hc_app.clean_hair"
+            android:label="床上洗頭"/>
+        <activity
+            android:name="com.example.hc_app.clean_menu"
+            android:label="床上洗頭、洗澡" />
+        <activity
+            android:name="com.example.hc_app.wear_clothes"
+            android:label="協助穿脫衣、褲" />
+        <activity
+            android:name=".activity_deathbedpeaceful"
+            android:label="臨終關懷及認識安寧照顧" />
         <activity
             android:name=".activity_emergencyconcept"
             android:label="急症概念" />
         <activity
             android:name=".activity_professioncare"
-            android:label="專業照顧技巧" />
+            android:label="專業照顧" />
         <activity
             android:name=".activity_assistexcretion"
             android:label="協助排泄" />

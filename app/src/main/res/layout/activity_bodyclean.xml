@@ -7,49 +7,48 @@
     tools:context=".activity_bodyclean">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/BTG"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="BG"
-            android:text="上一頁"
-            android:textSize="40sp" />
-        <Button
-            android:id="@+id/BTH"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="BH"
-            android:text="回首頁"
-            android:textSize="40sp"/>
-    </LinearLayout>
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginTop="85dp"
-        app:layout_constraintLeft_toLeftOf="parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
         <LinearLayout
-            android:id="@+id/linear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-            <TextView
-                android:id="@+id/bodyclean1"
-                android:layout_width="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/BTG"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1.協助穿脫衣、褲\n穿脫衣褲口訣：先穿不便側(遠側、患側等)；先脫簡單側(近側、健側等)。\n\n曹麗英、余怡珍、王玉女、徐秀琹、蔡麗紅、鄭幸宜…劉碧霞等(2018)．新編基本護理學：學理與技術．新北市：新文京開發。\n
-酈欽菁、于會功、黎佳伶、廖珮宏、李思瑩(2018)．基本護理學實習手冊．台北市：華杏。\n
-"               android:textSize="24dp"/>
-            <TextView
-                android:id="@+id/BodyClean2"
-                android:layout_width="match_parent"
+                android:onClick="BG"
+                android:text="上一頁"
+                android:textSize="40sp" />
+            <Button
+                android:id="@+id/BTH"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2.床上洗頭、洗澡\n床上洗頭：\n(1) 以指腹輕按摩方式來進行頭皮清洗。\n(2) 當個案頭髮糾結(沾染血塊)，可以「50%酒精」協助疏開。\n(3) 若個案因疾病關係無法平躺(呼吸會喘)，則需改採半坐臥姿勢。\n\n床上洗澡：\n(1) 臉部清潔順序應由：眼睛 → 額頭 → 臉及頸部 → 鼻孔 → 雙耳。\n
-(2) 清潔眼睛時，應由內眼眥至外眼眥擦拭。\n(3) 清潔四肢時，應由遠心端往近心端方向輕柔擦拭(如：手掌往頸肩方向)。\n(4) 清潔乳房時，應以環狀方式擦拭，避免不適，並注意女性乳房下皺褶處。\n\n
-曹麗英、余怡珍、王玉女、徐秀琹、蔡麗紅、鄭幸宜…劉碧霞等(2018)．新編基本護理學：學理與技術．新北市：新文京開發。\n酈欽菁、于會功、黎佳伶、廖珮宏、李思瑩(2018)．基本護理學實習手冊．台北市：華杏。"
-            android:textSize="24dp"/>
+                android:onClick="BH"
+                android:text="回首頁"
+                android:textSize="40sp"/>
         </LinearLayout>
-    </ScrollView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/WearClothes"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="WearClo"
+                android:text="協助穿脫\n衣褲"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/CleanHear"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="cleanhear"
+                android:text="床上洗頭\n洗澡"
+                android:textSize="60dp"/>
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
