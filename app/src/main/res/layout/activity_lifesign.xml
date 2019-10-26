@@ -5,37 +5,56 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity_lifesign">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/BTG"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="BG"
-            android:text="上一頁"
-            android:textSize="40sp" />
-        <Button
-            android:id="@+id/BTH"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="BH"
-            android:text="回首頁"
-            android:textSize="40sp"/>
-    </LinearLayout>
+
     <ScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="85dp"
         app:layout_constraintLeft_toLeftOf="parent">
         <LinearLayout
             android:id="@+id/linear"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
-
+            <Button
+                android:id="@+id/LifeSM"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="lsm"
+                android:text="生命徵象測量重要性"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/BodyTemR"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="btr"
+                android:text="體溫記錄及異常通報"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/PulseR"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="pr"
+                android:text="脈搏記錄及異常通報"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/BreatheR"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="br"
+                android:text="呼吸記錄及異常通報"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/BloodPR"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="bpr"
+                android:text="血壓記錄及異常通報"
+                android:textSize="60dp"/>
 
         </LinearLayout>
     </ScrollView>

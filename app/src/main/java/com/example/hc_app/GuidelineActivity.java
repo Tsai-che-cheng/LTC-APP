@@ -48,11 +48,12 @@ public class GuidelineActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void BH  (View v){
-        GuidelineActivity.this.finish();
-    }
     public void TLC  (View v){
         Intent it = new Intent(GuidelineActivity.this, activity_lifecare.class);
+        startActivity(it);
+    }
+    public void tb  (View v){
+        Intent it = new Intent(GuidelineActivity.this, TurnBody.class);
         startActivity(it);
     }
     public void TBC  (View v){
@@ -66,12 +67,6 @@ public class GuidelineActivity extends AppCompatActivity {
     public void TNGF  (View v){
         Intent it = new Intent(GuidelineActivity.this, activity_NGF.class);
         startActivity(it);
-        finish();
-    }
-    public void TTO  (View v){
-        Intent it = new Intent(GuidelineActivity.this, activity_turnover.class);
-        startActivity(it);
-        finish();
     }
     public void TBA  (View v){
         Intent it = new Intent(GuidelineActivity.this,activity_bodyactive.class);

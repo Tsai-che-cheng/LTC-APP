@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TenWarningsOfDementia">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(1) 記憶力減退影響到生活：一般正常人也多會出現忘記開會時間或朋友電話等事情，但多可以經一會兒或提醒可再次想起。但失智者忘記事情的頻率多，且即使經過提醒也無法想起該事件。因此會使失智者常重複發問、重複購物，甚至會出現重複服藥情形。失智者為容易忘記近期發生的事，甚至連重要之日期或事件也都會忘記。
+\n\n(2) 計劃事情或解決問題有困難：一般人在收支平衡計算上有時也會出現困難，但失智者在前期規劃、執行或在處理簡易計算數字就會出現困難，較無法專心，且需更多時間來處理以前熟悉的事情。
+\n\n(3) 無法勝任原本熟悉的事務：失智者對原本熟悉的事務常會忘記或遺漏既定步驟，進而無法順利完成，如：數學老師在加減算數上經常出錯、資深大廚炒菜走味等。
+\n\n(4) 對時間地點感到混淆：一般人偶而會忘記今天是幾號，在不熟的地方可能會迷路。但失智者則是會搞不清楚年月、白天或晚上，不知道自己身在哪裡或如何來到這裡，甚至會在自家周圍迷路而找不到回家的方向。
+\n\n(5) 對視覺影像和空間之關係的理解出現困難：一般人可能因白內障而出現視覺障礙，但失智者可能在閱讀、判斷距離遠近、決定顏色或對比上就出現困難。失智長可能會誤認鏡子中的自己是另外一個人，而覺得屋裡還有其他人存在。
+\n\n(6) 言語表達或書寫出現困難：一般人偶而會想不起某個字眼，但失智者想不起來的機會更為頻繁，甚至會用其它說法替代簡單的用詞，如：將郵差叫為「送信的人」等。失智者在對話過程中，也可能會出現中斷、重複或不知如何進行的行為。
+\n\n(7) 東西擺放錯亂且失去回頭尋找的能力：一般人偶而會任意放置物品，但失智者更為頻繁及誇張，將物品放在不合常理或不恰當的位置，如：水果放在衣櫥、拖鞋放在被子裡等。失智者於東西搞丟後，多會因無法回頭尋找，而將找不到東西指控他人偷竊。
+\n\n(8) 判斷力變差或減弱：一般人偶而會做出不好的抉擇，但失智者更為頻繁或偏差更大，如：聽推銷廣告而付出大量金錢、借錢給陌生人、開車易發生交通事故、過馬路不看左右紅綠燈等，而在穿著打扮上可能不合天候、場合或常蓬頭垢面。
+\n\n(9) 從職場或社交活動中退出：一般人偶會不想上班或參與社交活動，但失智者的生活嗜好、運動、社交活動、工作等都會逐步退縮及減少。失智者變得被動，且會避免許多互動場合。\n(10)情緒和個性的改變：一般正常人年紀漸大，情緒及性格可能會有些許改變，但失智者的改變則較為明顯，如：疑心病重、憂鬱、焦慮、易怒、口不擇言、隨地吐痰、過度外向、失去自我克制或沈默寡言、特別畏懼或依賴某個家庭成員等。"
+                android:textSize="40dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

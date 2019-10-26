@@ -5,44 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.hc_app.clean_hair">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/BTGH">
-        <Button
-            android:id="@+id/BTG"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="BG"
-            android:text="上一頁"
-            android:textSize="40sp" />
-        <Button
-            android:id="@+id/BTH"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="BH"
-            android:text="回首頁"
-            android:textSize="40sp"/>
-    </LinearLayout>
     <ScrollView
         android:id="@+id/Scroll"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/BTGH">
+        android:layout_height="wrap_content">
         <LinearLayout
             android:id="@+id/linear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-        <TextView
-            android:id="@+id/contect"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="床上洗頭：\n(1) 以指腹輕按摩方式來進行頭皮清洗。\n(2) 當個案頭髮糾結(沾染血塊)，可以「50%酒精」協助疏開。\n(3) 若個案因疾病關係無法平躺(呼吸會喘)，則需改採半坐臥姿勢。"
-            android:textSize="40dp"
-            app:layout_constraintTop_toBottomOf="@id/Scroll"/>
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/contect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="床上洗頭：\n\n(1) 以指腹輕按摩方式來進行頭皮清洗。\n\n(2) 當個案頭髮糾結(沾染血塊)，可以「50%酒精」協助疏開。\n\n(3) 若個案因疾病關係無法平躺(呼吸會喘)，則需改採半坐臥姿勢。"
+                android:textSize="40dp"
+                app:layout_constraintTop_toBottomOf="@id/Scroll"/>
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

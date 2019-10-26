@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AED">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="自動體外心臟電擊去顫器：一般非醫護人員皆能使用的可攜式急救設備，且AED使用者可受到『緊急醫療救護法第十四條之二 - 救護人員以外之人，為免除他人生命之急迫危險，使用緊急救護設備或施予急救措施者，適用民法、刑法緊急避難免責之規定。救護人員於非值勤期間，前項規定亦適用』之保障。
+\n\n(1) 使用時機：當個案沒有意識、沒有呼吸也沒有脈搏時使用。
+\n\n(2) 操作步驟：開啟AED電源，將貼片按指示貼在個案身上，等待AED分析心律(AED主要是針對心率不整來做電擊除顫治療，所以若AED分析為正常人心律後，是不會建議電擊的)，依指示按下電擊按鈕。
+\n\n(3) 電擊完成後續動作：AED電擊後，應立即執行胸外按壓，AED則每兩分鐘自動進行一次心律分析；胸外按壓暫停只有在AED分析心律的那幾秒鐘，除此之外，應反覆進行胸外按壓及AED心律分析直到個案恢復正常呼吸或有人接手為止。"
+                android:textSize="40dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

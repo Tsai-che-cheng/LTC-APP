@@ -5,37 +5,42 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity_emergencyconcept">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/BTG"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="BG"
-            android:text="上一頁"
-            android:textSize="40sp" />
-        <Button
-            android:id="@+id/BTH"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="BH"
-            android:text="回首頁"
-            android:textSize="40sp"/>
-    </LinearLayout>
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginTop="85dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent">
         <LinearLayout
             android:id="@+id/linear"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
-
+            <Button
+                android:id="@+id/ForeignBodyCongestionTreatment"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="fbct"
+                android:text="異物哽塞處理"
+                android:layout_marginTop="20dp"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/CPR"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="cpr"
+                android:text="心肺復甦術(CPR)-民眾版"
+                android:layout_marginTop="20dp"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/AED"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="aed"
+                android:text="自動體外心臟電擊去顫器(AED)"
+                android:layout_marginTop="20dp"
+                android:textSize="60dp"/>
         </LinearLayout>
     </ScrollView>
 

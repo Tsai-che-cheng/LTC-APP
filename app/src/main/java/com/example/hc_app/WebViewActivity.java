@@ -53,7 +53,7 @@ public class WebViewActivity extends AppCompatActivity{
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         myWebView.setWebViewClient(myWebViewClient);
-        myWebView.loadUrl("https://docs.google.com/forms/d/e/1FAIpQLScd-qGgwRtVHZP2u5AwcU87IwK1QI65holtWLIpt3WKrRn0cA/viewform");
+        myWebView.loadUrl("https://docs.google.com/forms/d/1GPiBGENmqcMDF2Z5b8Hrf2UIBWFJgvDQ5N82qmDup3o/edit");
     }
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CarryingBloodMeter">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <Button
+                android:id="@+id/AdultBloodSugarControlTarget"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="absct"
+                android:text="成年人血糖控制目標"
+                android:layout_marginTop="30dp"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/MeasuringBloodSugarSteps"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mbss"
+                android:text="測量血糖步驟"
+                android:layout_marginTop="30dp"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/MeasuringBloodSugarPrecautions"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="mbsp"
+                android:layout_marginVertical="30dp"
+                android:text="測量血糖注意事項"
+                android:textSize="60dp"/>
+    </LinearLayout>
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

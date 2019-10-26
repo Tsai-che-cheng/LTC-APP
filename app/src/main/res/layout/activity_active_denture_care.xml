@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActiveDentureCare">
+
+    <ScrollView
+        android:id="@+id/Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(1) 配戴假牙前應先將假牙潤濕或泡水，以減少摩擦不適。
+\n\n(2) 早晚2次及吃完食物後需立刻清潔，以免發生牙結石或導致牙齦發炎。
+\n\n(3) 清潔假牙時避免使用熱水，以免假牙變形。
+\n\n(4) 每日配戴假牙應至少取下休息6~8小時，以免牙齦紅腫潰瘍。
+\n\n(5) 假牙保存方式會因材質而有所不同：牙托為硬橡皮材質時，應泡在有水的容器，避免假牙乾操變形；牙托為合成樹脂材質時，則應放入乾操容器內。"
+                android:textSize="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

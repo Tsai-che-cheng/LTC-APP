@@ -8,21 +8,39 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main"
     tools:context=".MainActivity">
-    <Button
-        android:id="@+id/Guideline"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="50dp"
-        android:onClick="GOP_click"
-        android:text="照顧指引"
-        android:textSize="60dp"
-        app:layout_constraintTop_toTopOf="parent" />
-    <Button
-        android:id="@+id/Resource"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="50dp"
-        android:text="長照資源介紹"
-        android:textSize="60dp"
-        app:layout_constraintTop_toBottomOf="@id/Guideline" />
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <Button
+                android:id="@+id/Guideline"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:onClick="GOP_click"
+                android:text="照顧指引"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/Resource"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:text="政府長照資源"
+                android:onClick="Res_click"
+                android:textSize="60dp" />
+            <Button
+                android:id="@+id/Reference"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:text="參考資料"
+                android:onClick="Ref_click"
+                android:textSize="60dp" />
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

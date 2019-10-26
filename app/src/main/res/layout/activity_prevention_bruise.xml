@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PreventionBruise">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <Button
+                android:id="@+id/ReduceSkinCompressionTime"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="rsct"
+                android:text="減少皮膚受壓時間"
+                android:layout_marginTop="50dp"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/AvoidFrictionAndShear"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="afas"
+                android:text="避免摩擦力及剪力"
+                android:layout_marginTop="50dp"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/KeepCkinCleanAndDry"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="kccad"
+                android:text="保持皮膚\n清潔乾爽"
+                android:layout_marginVertical="50dp"
+                android:textSize="60dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

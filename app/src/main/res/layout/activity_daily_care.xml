@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DailyCare">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(1) 定期健康檢查及門診追蹤，避免失智者身體不適而造成精神行為混亂。
+\n\n(2) 定期與醫師討論藥物療效，切勿自行調整藥物劑量。
+\n\n(3) 需注意失智者的口腔衛生及身體清潔：隨時注意失智長的生活功能變化，適時協助個人衛生清潔工作，且需顧及其尊嚴以減少尷尬發生。
+\n\n(4) 生活作息養成規律習慣，並可將失智者的活動時間、吃飯、洗澡等當作重要事件安排。
+\n\n(5) 當失智者騎車或開車出現困難時，需考慮其他外出方式。並可申請愛心手鍊、至警察局進行指紋按捺、使用衛星定位或緊急救援設備等，以利失智者走失時較易尋回。
+\n\n(6) 給失智者多點時間，並盡量讓其發揮剩餘能力做喜歡即有意義的事。"
+                android:textSize="40dp" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

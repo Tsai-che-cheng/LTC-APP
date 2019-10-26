@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BloodPressureRecord">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <Button
+                android:id="@+id/NormalBloodPressure"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="nbp"
+                android:text="正常血壓範圍"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/HighBloodPressure"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="hbp"
+                android:text="高血壓定義"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/HighBloodPressureTarget"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="hbpt"
+                android:text="高血壓族群治療目標"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/LowBloodPressure"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="lbp"
+                android:text="姿位性低血壓"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/ProhibitedMeasure"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="pm"
+                android:text="禁止測量血壓之部位"
+                android:textSize="60dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

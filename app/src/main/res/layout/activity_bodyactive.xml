@@ -5,38 +5,103 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity_bodyactive">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/BTG"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="BG"
-            android:text="上一頁"
-            android:textSize="40sp" />
-        <Button
-            android:id="@+id/BTH"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="BH"
-            android:text="回首頁"
-            android:textSize="40sp"/>
-    </LinearLayout>
     <ScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="85dp"
         app:layout_constraintLeft_toLeftOf="parent">
         <LinearLayout
             android:id="@+id/linear"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
-
+            <Button
+                android:id="@+id/PassiveJointMovement"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="pjm"
+                android:text="被動關節運動注意事項"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/ShoulderAndUpperArmMovement"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="sauam"
+                android:text="肩部及上臂\n運動"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/ElbowAndForearmMovement"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="eafm"
+                android:text="肘部及前臂\n運動"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/WristMovement"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="wm"
+                android:text="腕部運動"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/ThumbMetacarpophalangealJoint"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="tmj"
+                android:text="手部-拇指\n掌指關節運動"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/ThumbKnuckleMovement"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="tkm"
+                android:text="手部-拇指\n指關節運動"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/FourFingerMetacarpophalangealJoint"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ffmj"
+                android:text="手部-四指\n掌指關節運動"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/FirstKnuckle"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="fk"
+                android:text="手部-四指\n第一、二指\n關節運動"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/HipAndKneeMovement"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="hakm"
+                android:text="髖、膝關節\n運動"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/AnkleMovement"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="am"
+                android:text="踝關節運動"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/ToeMovement"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="tm"
+                android:text="趾部運動"
+                android:textSize="60dp"/>
         </LinearLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

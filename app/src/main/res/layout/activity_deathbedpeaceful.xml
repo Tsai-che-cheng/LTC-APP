@@ -5,37 +5,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity_deathbedpeaceful">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <Button
-            android:id="@+id/BTG"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="BG"
-            android:text="上一頁"
-            android:textSize="40sp" />
-        <Button
-            android:id="@+id/BTH"
-            android:layout_weight="1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="BH"
-            android:text="回首頁"
-            android:textSize="40sp"/>
-    </LinearLayout>
     <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginTop="85dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintLeft_toLeftOf="parent">
         <LinearLayout
             android:id="@+id/linear"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
-
+            <Button
+                android:id="@+id/HospiceCareSpiritAndContent"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="hcsac"
+                android:text="臨終關懷精神與內容"
+                android:layout_marginTop="80dp"
+                android:textSize="60dp"/>
+            <Button
+                android:id="@+id/Death"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="d"
+                android:text="服務對象往生後，警政相關通報"
+                android:layout_marginTop="80dp"
+                android:textSize="60dp"/>
         </LinearLayout>
     </ScrollView>
 
