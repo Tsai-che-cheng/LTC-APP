@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommunicationSkills">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(1) 為失智者做任何動作時都應事先告知，即使失智者無法完全理解。
+\n\n(2) 與失智者對談時，需在失智者的視線範圍內，並且說話速度需放慢，聲調應溫和友善，並可搭配肢體語言、圖片或食物進行輔助。如：直接拿著香蕉到失智者面前問「***現在要不要吃香蕉呢？」
+\n\n(3) 多肯定及鼓勵失智者，若失智者出現重複話語時，請多以傾聽方式接受，並可使用其他活動或話題轉移失智者之注意力，可較避免帶有情緒的對話出現。
+\n\n(4) 當失智者從健忘進入到混亂程度時，盡量用認同取代事事糾正，且避免和失智者爭辯，不要企圖讓失智長者承認他的功能退化或錯誤，以維持失智者之尊嚴。"
+                android:textSize="40dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

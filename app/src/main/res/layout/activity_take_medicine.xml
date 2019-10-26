@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TakeMedicine">
+    <ScrollView
+        android:id="@+id/Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(1) 最好以溫開水吞服口服藥物。
+\n\n(2) 若藥物味道較重，可於服藥前口含小碎冰以麻痺舌頭周圍神經。
+\n\n(3) 若個案需需同時服用中藥及西藥，中間應間隔1~2小時，避免藥物相衝突。
+\n\n(4) 給予「降血壓藥物」前，需先確認個案血壓目前狀況，若個案收縮壓 &lt; 100 mmHg，舒張壓 &lt; 60 mmHg，先暫停給予藥物，避免生發危險。
+\n\n(5) 給予「心律不整藥物」前，應先確認個案心律目前狀況，且範圍需在每分鐘60~100次。"
+                android:textSize="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

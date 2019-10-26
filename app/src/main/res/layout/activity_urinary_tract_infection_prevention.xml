@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UrinaryTractInfectionPrevention">
+
+    <ScrollView
+        android:id="@+id/Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(1) 若個案無水分之限制，成人每日應至少攝取2000~2500 cc的液體。
+\n\n(2) 每2小時排尿一次，避免憋尿。
+\n\n(3) 保持會陰部之清潔，女性排尿後清潔應由前往後擦拭(會陰至肛門)。
+\n\n(4) 可多攝取維生素C及酸性食物，如：小紅莓、蔓越梅等製品以利尿液酸化，避免細菌滋生。
+\n\n(5) 若個案長期留置尿管：
+\n\n(A) 應多增加水分之攝取以減少尿液沉澱物形成。
+\n\n(B) 維持尿管管路通暢及密閉性，避免尿袋出口著地及碰觸周圍環境。
+\n\n(C) 維持尿袋保持於個案膀胱下方處，且尿袋內尿量以不超過1/2~2/3為原則，避免尿液逆流。
+\n\n(D) 每日需進行2次以上尿管護理，並保持會陰部之清潔。
+\n\n(E) 若尿管及尿袋內有結晶、血塊、沉澱物、滲漏等情形，則應立即更換。"
+                android:textSize="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

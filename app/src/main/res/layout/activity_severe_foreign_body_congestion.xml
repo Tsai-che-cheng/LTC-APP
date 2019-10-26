@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SevereForeignBodyCongestion">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="個案可能會出現兩手掐住脖子、咳嗽逐漸轉弱或無法咳嗽、呼吸困難或無法呼吸、無法說話或全身軟弱等症狀。
+\n\n(1) 立即詢問個案或家屬「是否噎到」。
+\n\n(2) 若個案點頭表示或無法發出聲音時，應立即在站在個案後面，雙腳成弓箭步，前腳膝蓋置於個案胯下，上半身靠近或貼緊個案背部後，一手握拳置於個案上腹部(肚臍上方)，另一手抱住拳頭。
+\n\n(3) 雙手用力向個案腹部快速重複向上推擠，需留意是否有異物吐出(懷孕後期或肥胖者避免進行腹部推擠，應考慮改由胸部按壓方式)。
+\n\n(4) 若異物無法排除且個案意識喪失時，應立即協助個案平躺並進行心肺復甦術(CPR)，並立即找人協助及撥打119。若於CPR中看到異物出現於口腔時，可嘗試用手指將其移除。"
+                android:textSize="40dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StomaPrecautions">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(1) 觀察造口血液循環：造口外觀呈圓形或橢圓形，直徑約2~5公分，隆出皮膚約1~2公分，若造口脫出或有回縮情形時，應就醫處理；造口顏色應呈粉紅、濕潤狀，若造口呈紫黑情形，則代表有缺血狀況，需就醫處理。\n\n(2) 造口處可能會因碰觸、更換造口袋或清潔皮膚時導致有少量出血情形，這是很正常現象，不需特別擔心。\n\n(3) 當造口袋中排泄物達1/3~1/2時，應排空並清潔造口袋。\n\n(4) 通常5~7天需更換造口袋，若排泄物滲漏或造口周圍有不適情況時，則應立即更換。若為永久性的造口個案，其排便時間已有固定，則可免用造口袋，以紗布覆蓋即可。\n\n(5) 當造口周圍有發炎或凹陷剝離情況時，需以傷口換藥方式處理，不可直接貼上造口袋，並需就醫處理。"
+                android:textSize="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

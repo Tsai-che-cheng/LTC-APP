@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerinealIrrigation">
+    <ScrollView
+        android:id="@+id/Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="床上沖洗注意：可以個案大腿內側測試水溫是否合宜可接受；清洗過程中，則需隨時注意個案反應及是否有分泌物之狀況。
+\n\n(1) 女性：以大棉枝由內至外，由上至下清潔。
+\n\n→ 大棉枝不可來回擦拭及重複使用，避免感染。
+\n\n→ 大棉枝用量需視個案清潔度及狀況增加使用。"
+                android:textSize="40dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/lifecare20" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="以大棉枝由上至下清潔。
+\n\n→ 沖洗清潔前後因注意個案包皮是否露出及推回。
+\n
+\n便盆使用注意：便盆較高處朝床尾放置。
+\n\n→ 若個案無法自行抬臀，可先協助採側臥後，將便盆平貼至臀部在平躺。"
+                android:textSize="40dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/lifecare21" />
+            <Button
+                android:id="@+id/PPCVideo"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:onClick="ppcv"
+                android:text="衛教影片"
+                android:textSize="60dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,8 @@
     package="com.example.hc_app">
 
     <dist:module dist:instant="true" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -13,22 +14,350 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.hc_app.clean_body"
-            android:label="床上洗澡"/>
-        <activity android:name="com.example.hc_app.clean_hair"
-            android:label="床上洗頭"/>
+        <activity android:name=".Reference"
+            android:label="參考資料"/>
         <activity
-            android:name="com.example.hc_app.clean_menu"
-            android:label="床上洗頭、洗澡" />
+            android:name=".TurnBody"
+            android:label="翻身拍背" />
         <activity
-            android:name="com.example.hc_app.wear_clothes"
-            android:label="協助穿脫衣、褲" />
+            android:name=".LTCQualifications"
+            android:label="長照申請資格" />
+        <activity
+            android:name=".LTCItem"
+            android:label="長照服務項目" />
+        <activity
+            android:name=".LTCApplicationProcess"
+            android:label="長期照顧服務申請流程" />
+        <activity
+            android:name=".LTCApplicationLocation"
+            android:label="長照資源申請管道" />
+        <activity
+            android:name=".LTCapplicationQualification"
+            android:label="長照服務申請資格" />
+        <activity
+            android:name=".Resource"
+            android:label="政府長照資源" />
+        <activity
+            android:name=".FCVideo"
+            android:label="女性尿管護理" />
+        <activity
+            android:name=".NGVideo"
+            android:label="鼻胃管護理" />
+        <activity
+            android:name=".NGFVideo"
+            android:label="管灌餵食" />
+        <activity
+            android:name=".PPCVideo"
+            android:label="會陰沖洗" />
+        <activity
+            android:name=".UseGlycerinBall"
+            android:label="甘油球通便" />
+        <activity
+            android:name=".ConstipationDisposal"
+            android:label="便祕處置" />
+        <activity
+            android:name=".IntestinalExcretion"
+            android:label="腸道排泄之需要" />
+        <activity
+            android:name=".UrinaryTractInfectionPrevention"
+            android:label="泌尿道感染預防" />
+        <activity
+            android:name=".UrinaryNotClean"
+            android:label="解尿解不乾淨處置(尿瀦留)" />
+        <activity
+            android:name=".UrinaryIncontinence"
+            android:label="尿失禁處置" />
+        <activity
+            android:name=".UrinaryExcretion"
+            android:label="泌尿道排泄之需要" />
+        <activity
+            android:name=".PerinealIrrigation"
+            android:label="會陰沖洗" />
+        <activity
+            android:name=".EarMedicine"
+            android:label="耳滴藥物" />
+        <activity
+            android:name=".EyeOintment"
+            android:label="眼藥膏使用" />
+        <activity
+            android:name=".EyeMedicine"
+            android:label="眼藥水使用" />
+        <activity
+            android:name=".TakeMedicine"
+            android:label="口服藥物使用" />
+        <activity
+            android:name=".AssistWithMedication"
+            android:label="協助個案用藥" />
+        <activity
+            android:name=".CutNails"
+            android:label="修剪手指甲及腳趾甲" />
+        <activity
+            android:name=".ActiveDentureCare"
+            android:label="活動假牙護理" />
+        <activity
+            android:name=".SpecialOralCare"
+            android:label="特別口腔護理" />
+        <activity
+            android:name=".Flossing"
+            android:label="牙線使用" />
+        <activity
+            android:name=".Brushing"
+            android:label="貝式刷牙" />
+        <activity
+            android:name=".BrushingAndOralCleaning"
+            android:label="刷牙及口腔清潔" />
+        <activity
+            android:name=".UpperAndLowerWheelchair"
+            android:label="上下輪椅" />
+        <activity
+            android:name=".AssistingInGettingOutOfDed"
+            android:label="協助上下床" />
+        <activity
+            android:name=".AssistInTurningOverContent"
+            android:label="協助翻身移位" />
+        <activity
+            android:name=".AssistInTurningOver"
+            android:label="協助翻身移位、上下床、上下輪椅等" />
+        <activity
+            android:name=".AccidentalDeath"
+            android:label="個案於家中「意外往生」" />
+        <activity
+            android:name=".NaturalDeath"
+            android:label="個案於家中「自然往生」" />
+        <activity
+            android:name=".InforationForDeath"
+            android:label="在宅往生需備資料" />
+        <activity
+            android:name=".Death"
+            android:label="服務對象往生後，警政相關通報" />
+        <activity
+            android:name=".CaseAndFamilyCare"
+            android:label="個案及家屬的照顧" />
+        <activity
+            android:name=".HospiceCareSpirit"
+            android:label="臨終關懷精神" />
+        <activity
+            android:name=".HospiceCareSpiritAndContent"
+            android:label="臨終關懷精神與內容" />
+        <activity
+            android:name=".AED"
+            android:label="自動體外心臟電擊去顫器" />
+        <activity
+            android:name=".CPR"
+            android:label="心肺復甦術(CPR)-民眾版" />
+        <activity
+            android:name=".SevereForeignBodyCongestion"
+            android:label="重度異物哽塞(清醒狀態)" />
+        <activity
+            android:name=".MildForeignBodyCongestion"
+            android:label="輕度異物哽塞" />
+        <activity
+            android:name=".ForeignBodyCongestionTreatment"
+            android:label="異物哽塞處理" />
+        <activity
+            android:name=".HomeEnvironment"
+            android:label="居家環境" />
+        <activity
+            android:name=".CommunicationSkills"
+            android:label="溝通技巧" />
+        <activity
+            android:name=".DailyCare"
+            android:label="日常照顧" />
+        <activity
+            android:name=".BasicCareForDementia"
+            android:label="失智症基本照顧" />
+        <activity
+            android:name=".TenWarningsOfDementia"
+            android:label="失智症十大警訊" />
+        <activity
+            android:name=".ReplaceTheOstomyStep"
+            android:label="更換造口袋步驟" />
+        <activity
+            android:name=".StomaPrecautions"
+            android:label="造口注意事項" />
+        <activity
+            android:name=".OralSuction"
+            android:label="口腔抽吸" />
+        <activity
+            android:name=".BodyPipelineCleaning"
+            android:label="身上管路清潔(鼻胃管、尿管護理)" />
+        <activity
+            android:name=".MaleUrinaryTubeCare"
+            android:label="男性尿管護理" />
+        <activity
+            android:name=".FemaleUrinaryTubeCare"
+            android:label="女性尿管護理" />
+        <activity
+            android:name=".NasalTubeCare"
+            android:label="鼻胃管護理" />
+        <activity
+            android:name=".SimpleCareForWoundSecretions"
+            android:label="傷口分泌物簡易照顧處理" />
+        <activity
+            android:name=".MeasuringBloodSugarPrecautions"
+            android:label="測量血糖注意事項" />
+        <activity
+            android:name=".MeasuringBloodSugarSteps"
+            android:label="測量血糖步驟" />
+        <activity
+            android:name=".AdultBloodSugarControlTarget"
+            android:label="成年人血糖控制目標" />
+        <activity
+            android:name=".CarryingBloodMeter"
+            android:label="攜帶式血糖機驗血糖並錄及異常通報" />
+        <activity
+            android:name=".GlycerinBall"
+            android:label="甘油球通便" />
+        <activity
+            android:name=".DownTheStairs"
+            android:label="下樓梯" />
+        <activity
+            android:name=".UpTheStairs"
+            android:label="上樓梯" />
+        <activity
+            android:name=".ToeMovement"
+            android:label="趾部運動" />
+        <activity
+            android:name=".AnkleMovement"
+            android:label="踝關節運動" />
+        <activity
+            android:name=".HipAndKneeMovement"
+            android:label="髖、膝關節運動" />
+        <activity
+            android:name=".FirstKnuckle"
+            android:label="手部-四指第一指關節運動" />
+        <activity
+            android:name=".FourFingerMetacarpophalangealJoint"
+            android:label="手部-四指掌指關節運動" />
+        <activity
+            android:name=".ThumbKnuckleMovement"
+            android:label="手部-拇指指關節運動" />
+        <activity
+            android:name=".ThumbMetacarpophalangealJoint"
+            android:label="手部-拇指掌指關節運動" />
+        <activity
+            android:name=".WristMovement"
+            android:label="腕部運動" />
+        <activity
+            android:name=".ElbowAndForearmMovement"
+            android:label="肘部及前臂運動" />
+        <activity
+            android:name=".ShoulderAndUpperArmMovement"
+            android:label="肩部及上臂運動" />
+        <activity
+            android:name=".PassiveJointMovement"
+            android:label="被動關節運動注意事項" />
+        <activity
+            android:name=".KeepCkinCleanAndDry"
+            android:label="保持皮膚清潔乾爽" />
+        <activity
+            android:name=".AvoidFrictionAndShear"
+            android:label="避免摩擦力及剪力" />
+        <activity
+            android:name=".ReduceSkinCompressionTime"
+            android:label="減少皮膚受壓時間" />
+        <activity
+            android:name=".PreventionBruise"
+            android:label="預防壓傷(壓瘡)" />
+        <activity
+            android:name=".BruisePart"
+            android:label="壓傷好發部位" />
+        <activity
+            android:name=".BruiseReason"
+            android:label="壓傷好發原因" />
+        <activity
+            android:name=".BruiseDefinition"
+            android:label="壓傷定義" />
+        <activity
+            android:name=".Bruise"
+            android:label="壓傷(壓瘡)" />
+        <activity
+            android:name=".HelpMaintainTheCorrectPosture"
+            android:label="協助維持正確姿勢" />
+        <activity
+            android:name=".Shift"
+            android:label="移位原則" />
+        <activity
+            android:name=".ShiftAndPlacement"
+            android:label="移位與擺位注意事項" />
+        <activity
+            android:name=".ProhibitedMeasure"
+            android:label="禁止測量血壓之部位" />
+        <activity
+            android:name=".LowBloodPressure"
+            android:label="姿位性低血壓" />
+        <activity
+            android:name=".HighBloodPressureTarget"
+            android:label="高血壓族群治療目標" />
+        <activity
+            android:name=".HighBloodPressure"
+            android:label="高血壓定義" />
+        <activity
+            android:name=".NormalBloodPressure"
+            android:label="正常血壓範圍" />
+        <activity
+            android:name=".BloodPressureRecord"
+            android:label="血壓記錄及異常通報" />
+        <activity
+            android:name=".BreatheAbnormalReason"
+            android:label="呼吸異常之原因" />
+        <activity
+            android:name=".BreatheMeasure"
+            android:label="呼吸速率測量" />
+        <activity
+            android:name=".NormalBreathe"
+            android:label="成人正常呼吸速率" />
+        <activity
+            android:name=".BreatheRecord"
+            android:label="呼吸記錄及異常通報" />
+        <activity
+            android:name=".PulseAbnormalReason"
+            android:label="脈搏異常之原因" />
+        <activity
+            android:name=".PulseMeasure"
+            android:label="測量脈搏" />
+        <activity
+            android:name=".NormalPulse"
+            android:label="成人正常脈搏速率" />
+        <activity
+            android:name=".PulseRecord"
+            android:label="脈搏記錄及異常通報" />
+        <activity
+            android:name=".HearTemperature"
+            android:label="耳溫槍測量注意事項" />
+        <activity
+            android:name=".NormalTemperature"
+            android:label="體溫正常範圍" />
+        <activity
+            android:name=".BodyTemperatureRecord"
+            android:label="體溫記錄及異常通報" />
+        <activity
+            android:name=".GeneralSuggestMeasure"
+            android:label="測量時機" />
+        <activity
+            android:name=".LifeSignMeasure2"
+            android:label="生命徵象測量重要性" />
+        <activity
+            android:name=".LifeSignMeasure"
+            android:label="生命徵象測量重要性" />
+        <activity
+            android:name=".clean_body"
+            android:label="床上洗澡" />
+        <activity
+            android:name=".clean_hair"
+            android:label="床上洗頭" />
+        <activity
+            android:name=".clean_menu"
+            android:label="床上洗頭洗澡" />
+        <activity
+            android:name=".wear_clothes"
+            android:label="協助穿脫衣褲" />
         <activity
             android:name=".activity_deathbedpeaceful"
             android:label="臨終關懷及認識安寧照顧" />
         <activity
             android:name=".activity_emergencyconcept"
-            android:label="急症概念" />
+            android:label="基本急救概念" />
         <activity
             android:name=".activity_professioncare"
             android:label="專業照顧" />
@@ -45,9 +374,6 @@
             android:name=".activity_bodyactive"
             android:label="肢體關節活動" />
         <activity
-            android:name=".activity_turnover"
-            android:label="翻身拍背" />
-        <activity
             android:name=".activity_NGF"
             android:label="管灌及餵食" />
         <activity
@@ -59,12 +385,13 @@
         <activity
             android:name=".activity_lifecare"
             android:label="基本日常照顧" />
-        <activity android:name=".GuidelineActivity"
+        <activity
+            android:name=".GuidelineActivity"
             android:label="照顧指引"
-            android:logo="@drawable/ic_launcher_foreground"/>
+            android:logo="@drawable/ic_launcher_foreground" />
         <activity
             android:name=".MainActivity"
-            android:label="居家照顧指引"
+            android:label="居家照顧指引APP"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -78,7 +405,9 @@
         <activity
             android:name=".WebViewActivity"
             android:label="WebView" />
-
+        <activity
+            android:name=".WebViewActivity_After"
+            android:label="WebView" />
     </application>
 
 </manifest>

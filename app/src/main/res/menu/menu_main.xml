@@ -6,8 +6,12 @@
         android:title="@string/action_settings"
         android:orderInCategory="100"
         app:showAsAction="never" />
-    <item android:id="@+id/action_googleForms"
-        android:title="@string/action_googleForms"
+    <item android:id="@+id/action_googleForms_Before"
+        android:title="@string/action_googleForms_Before"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_googleForms_After"
+        android:title="@string/action_googleForms_After"
         android:orderInCategory="100"
         app:showAsAction="never" />
 </menu>

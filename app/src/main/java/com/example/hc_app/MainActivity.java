@@ -54,20 +54,16 @@ public class MainActivity extends AppCompatActivity {
         Intent it = new Intent(MainActivity.this, GuidelineActivity.class);
         startActivity(it);
     }
+    public void Res_click  (View v){
+        Intent it = new Intent(MainActivity.this, Resource.class);
+        startActivity(it);
+    }
+    public void Ref_click  (View v){
+        Intent it = new Intent(MainActivity.this, Reference.class);
+        startActivity(it);
+    }
 
 
-    /*View.OnClickListener ROPListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-
-        }
-    };
-    View.OnClickListener UOPListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-
-        }
-    };*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -90,8 +86,13 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
-        if (id == R.id.action_googleForms) {
+        if (id == R.id.action_googleForms_Before) {
             Intent intent = new Intent(this, WebViewActivity.class);
+            startActivity(intent);
+            return true;
+        }
+        if (id == R.id.action_googleForms_After) {
+            Intent intent = new Intent(this, WebViewActivity_After.class);
             startActivity(intent);
             return true;
         }

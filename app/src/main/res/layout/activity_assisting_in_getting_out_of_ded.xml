@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AssistingInGettingOutOfDed">
+    <ScrollView
+        android:id="@+id/Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(1) 以個案健側處或有力處協助個案下床。
+\n\n(2) 協助個案雙手放至肩上或協助個案使用有力處支撐床面。
+\n\n(3) 一手深入個案頸肩，另一手放至膝窩處\n。"
+                android:textSize="40dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@mipmap/lifecare3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n(4) 以個案臀部為軸心，置於頸肩處的手向上使力，膝窩處的手向下使力後使個案坐起。\n"
+                android:textSize="40dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@mipmap/lifecare4"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n(5) 維持個案坐姿並觀察反應(怕個案有姿位性低血壓情形)。
+\n\n(6) 採半蹲姿勢，雙腳一前一後頂住個案膝關節，以雙手環抱個案腰部或抓住腰部褲帶協助離開床面並移位或站立。\n"
+                android:textSize="40dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/lifecare5"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/lifecare6"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/lifecare7"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

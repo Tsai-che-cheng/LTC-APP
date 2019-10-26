@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UrinaryNotClean">
+    <ScrollView
+        android:id="@+id/Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(1) 若個案可自行如廁排尿，可教導彎腰同時以拳頭按壓膀胱以利排尿。
+\n\n(2) 若個案有尿管，則可練習尿管訓練，以利拔除管路。
+\n\n(A) 若個案無水分之限制，訓練時可請個案每小時攝取150~200cc的水分，使膀胱有容量以刺激尿液感，並將尿管夾緊。
+\n\n(B) 訓練過程中，若個案有尿意感時，應立即放開尿管並測量尿液多寡(若尿液為300~350cc為正常值)；若個案未有反應，應每2~3小時放開尿管並測量尿液多寡(若尿液> 500cc，且個案皆無感覺，應縮減尿管放開時間)。
+\n\n(C) 晚上則需避免進行尿管訓練，以免影響個案睡眠之品質。"
+                android:textSize="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

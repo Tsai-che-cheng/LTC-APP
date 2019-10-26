@@ -9,48 +9,23 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <Button
-                android:id="@+id/BTG"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="BG"
-                android:text="上一頁"
-                android:textSize="40sp" />
-            <Button
-                android:id="@+id/BTH"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="BH"
-                android:text="回首頁"
-                android:textSize="40sp"/>
-        </LinearLayout>
-        <LinearLayout
+        <Button
+            android:id="@+id/CleanHard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/CleanHard"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="cleanhard"
-                android:text="床上洗頭"
-                android:textSize="60dp" />
-
-            <Button
-                android:id="@+id/CleanBody"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:onClick="cleanbody"
-                android:text="床上洗澡"
-                android:textSize="60dp"/>
-        </LinearLayout>
+            android:layout_weight="1"
+            android:onClick="cleanhard"
+            android:layout_marginTop="80dp"
+            android:text="床上洗頭"
+            android:textSize="60dp" />
+        <Button
+            android:id="@+id/CleanBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="100dp"
+            android:layout_weight="1"
+            android:onClick="cleanbody"
+            android:text="床上洗澡"
+            android:textSize="60dp"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

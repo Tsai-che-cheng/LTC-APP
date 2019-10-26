@@ -7,48 +7,25 @@
     tools:context=".activity_bodyclean">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <Button
-                android:id="@+id/BTG"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="BG"
-                android:text="上一頁"
-                android:textSize="40sp" />
-            <Button
-                android:id="@+id/BTH"
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="BH"
-                android:text="回首頁"
-                android:textSize="40sp"/>
-        </LinearLayout>
-        <LinearLayout
+        <Button
+            android:id="@+id/WearClothes"
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <Button
-                android:id="@+id/WearClothes"
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="WearClo"
-                android:text="協助穿脫\n衣褲"
-                android:textSize="60dp"/>
-            <Button
-                android:id="@+id/CleanHear"
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:onClick="cleanhear"
-                android:text="床上洗頭\n洗澡"
-                android:textSize="60dp"/>
-        </LinearLayout>
+            android:onClick="WearClo"
+            android:layout_marginTop="50dp"
+            android:text="協助穿脫衣褲"
+            android:textSize="60dp"/>
+        <Button
+            android:id="@+id/CleanHear"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="cleanhear"
+            android:text="床上洗頭洗澡"
+            android:layout_marginVertical="80dp"
+            android:textSize="60dp"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

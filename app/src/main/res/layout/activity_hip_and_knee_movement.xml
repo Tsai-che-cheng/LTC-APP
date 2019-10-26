@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HipAndKneeMovement">
+
+    <ScrollView
+        android:id="@+id/Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="支拖踝關節及膝關節\n\n(1)  直膝式屈區：膝蓋伸直，大腿向上舉高。"
+                android:textSize="40dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/bodyactive36"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(2)  直膝式伸展：膝蓋伸直，大腿向下直放。\n\n(3)  屈膝式屈區：協助膝蓋上舉彎曲後，一手壓膝，一手托踝，將膝輕壓至腹部。"
+                android:textSize="40dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/bodyactive37"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/bodyactive38"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(4)  屈膝式伸展：一手托膝，一手托踝，協助腿向下直放(回至身體處)。\n\n(5)  外展：膝蓋伸直，遠離身體中線。"
+                android:textSize="40dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/bodyactive39"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(6)  內收：膝蓋伸直，靠回身體中線。"
+                android:textSize="40dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/bodyactive40"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(7)  直膝式外旋：膝蓋伸直，小腿與大腿一同轉向外側。"
+                android:textSize="40dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/bodyactive41"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(8)  直膝式內旋：膝蓋伸直，小腿與大腿一同轉向內側。"
+                android:textSize="40dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/bodyactive42"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(9)  屈膝式外旋：協助膝蓋上舉彎曲後，將小腿移向身體內側(膝向外)。"
+                android:textSize="40dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/bodyactive43"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(10) 屈膝式內旋：協助膝蓋上舉彎曲後，將小腿移向身體外側(膝向內)。"
+                android:textSize="40dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="30dp"
+                android:src="@mipmap/bodyactive44"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(11) 迴轉：膝蓋伸直，協助髖關節做360度轉動。"
+                android:textSize="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

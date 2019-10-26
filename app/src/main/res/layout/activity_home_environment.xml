@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeEnvironment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(1) 若要預防失智者自行外出，可加裝較複雜的鎖，或以圖畫、窗簾遮蓋住門，並可於門上加裝風鈴或感應式門鈴等。
+\n\n(2) 應避免家中出現容易導致跌倒之環境，如：避免光滑或反光的地板、避免易滑動的小地毯、將家具固定並將銳角包起來等。另外，樓梯走道需明亮、顏色需對比鮮明，並將門檻打平以策安全。
+\n\n(3) 失智者若開始出現找不到廁所的行為時，可放置顯眼圖案或標示於廁所門上。"
+                android:textSize="40dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,29 +8,13 @@
     android:layout_gravity="top"
     tools:context=".GuidelineActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="5dp"
-        android:gravity="center"
-        app:layout_constraintTop_toTopOf="parent">
-    <Button
-        android:id="@+id/BTH"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="BH"
-        android:text="上一頁"
-        android:textSize="40sp"/>
-</LinearLayout>
     <ScrollView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="85dp"
         app:layout_constraintLeft_toLeftOf="parent">
         <LinearLayout
             android:id="@+id/linear"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
@@ -64,8 +48,10 @@
                 android:onClick="TLS"
                 app:layout_constraintTop_toBottomOf="@id/LifeCare" />
 
+
+
             <Button
-                android:id="@+id/NGFeeding"
+                android:id="@+id/NGF"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -76,15 +62,15 @@
                 app:layout_constraintTop_toBottomOf="@id/LifeSign" />
 
             <Button
-                android:id="@+id/TurnOver"
+                android:id="@+id/TurnBody"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginHorizontal="10dp"
                 android:text="翻身拍背"
                 android:textSize="40dp"
-                android:onClick="TTO"
-                app:layout_constraintTop_toBottomOf="@id/NGFeeding" />
+                android:onClick="tb"
+                app:layout_constraintTop_toBottomOf="@id/NGF" />
 
             <Button
                 android:id="@+id/BodyActivity"
@@ -95,7 +81,7 @@
                 android:text="肢體關節活動"
                 android:textSize="40dp"
                 android:onClick="TBA"
-                app:layout_constraintTop_toBottomOf="@id/TurnOver" />
+                app:layout_constraintTop_toBottomOf="@id/TurnBody" />
 
             <Button
                 android:id="@+id/HelpStairs"
@@ -147,7 +133,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginHorizontal="10dp"
-                android:text="急症概念"
+                android:text="基本急救概念"
                 android:textSize="40dp"
                 android:onClick="TEC"
                 app:layout_constraintTop_toBottomOf="@id/ProfessionCare" />
