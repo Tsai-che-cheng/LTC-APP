@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_NGF">
+    <ScrollView
+        android:id="@+id/Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="管灌餵食：\n\n(1) 協助個案灌食前，需先協助個案採坐臥或半坐臥姿勢(若個案痰量較多，則應給予抽痰後在協助灌食，避免灌食過程出現嗆咳)。\n\n(2) 灌食空針接上管路後，需先予以反抽，好評估個案胃部消化狀況，若個案胃部反抽物超過100cc，表示個案消化不佳，應先暫停灌食，待1小時後再次檢查；胃部內的反抽物皆需打回胃中(避免出現電解質不平衡狀況)。\n\n(3) 反摺鼻胃管/胃造口管路末端(避免空氣進入胃中)，將灌食空針的針心抽出，接上鼻胃管/胃造口管路準備灌食。\n"
+                android:textSize="40dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@mipmap/ngf1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n(4) 以慣用手握住灌食空針，以小指反摺鼻胃管/胃造口管路末端後(避免空氣進入)，將食物倒入針筒內，保持高度在距離胃部30~45公分處，並可以小指(反折角度大小)及高度來控制灌食速度(流速太快，容易引起個案腹部不適及噁心嘔吐)。\n"
+                android:textSize="40dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:src="@mipmap/ngf2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="\n\n(5) 灌入食物前，應先倒入30~50 c.c.的溫開水，以確認管路是否通暢，並潤濕管路。\n\n(6) 每次灌食量約250~200c.c.，時間約10~15分鐘。\n\n(7) 灌食結束後，需再倒入30~60c.c.的溫開水，以清潔鼻胃管/胃造口管路，避免食物
+殘留於管壁中發酵，並可維持管路的通暢。\n\n(8) 反摺鼻餵管/胃造口管路末端後，再取下灌食空針，確認鼻胃管/胃造口管路上的栓子是
+否已確實封閉關上。\n\n(9) 灌食結束後，維持個案採坐臥或半坐臥姿勢至少1小時，避免食物逆流。"
+                android:textSize="40dp"/>
+            <Button
+                android:id="@+id/NGFVideo"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="ngfv"
+                android:text="衛教影片"
+                android:textSize="60dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

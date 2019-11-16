@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EarMedicine">
+    <ScrollView
+        android:id="@+id/Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(1) 藥物滴入前，應先確認個案耳道內之情形，若耳膜有出現破損傷口，則應以無菌棉枝輕擦拭耳道內分泌物後在滴入藥物。
+\n\n(2) 協助個案耳朵朝上，並將耳道拉直。3歲以上至成人：耳廓向上向後拉；3歲以下至嬰兒：耳廓向下向後拉。
+\n\n(3) 藥物滴入後，協助個案維持原姿勢數分鐘，避免藥物流出。"
+                android:textSize="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

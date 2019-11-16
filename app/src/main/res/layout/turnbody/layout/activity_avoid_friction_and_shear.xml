@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AvoidFrictionAndShear">
+    <ScrollView
+        android:id="@+id/Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(1) 摩擦力：皮膚與接觸地方有平行移動的力量，容易使皮膚造成擦傷傷口；剪力：壓力(向下的力量)與摩擦力(向左右平行的力量)同時發生，常見於長時間採半坐臥姿勢的臥床個案，因半坐臥時，重力容易使個案下滑，導致個案臀部易有傷口產生。\n\n(2) 協助個案改為臥位時，應避免以「拖」或「拉」的方式移動，而改以「抬高」或利用枕頭類物品協助。\n\n(3) 個案從臥床平躺姿勢改為半坐臥姿勢時，應先搖高床尾在搖高床頭，以避免個案身體容易下滑。\n\n(4) 協助個案沐浴時應輕柔擦拭或改以按壓方式清潔。"
+                android:textSize="40dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

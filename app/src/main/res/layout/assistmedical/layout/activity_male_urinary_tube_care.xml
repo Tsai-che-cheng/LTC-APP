@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MaleUrinaryTubeCare">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(1) 使用優碘溶液進行消毒。\n\n(2) 消毒順序：以環狀方式消毒尿道口 → 換新棉枝後，以環狀方式消毒靠近尿道口的尿管 → 換新棉枝後，由尿道口至尿管方向消毒約10公分；待2分鐘後，以生理食鹽水在以上述步驟進行清潔(棉枝不可來回擦拭)。\n\n(3) 如個案包皮及尿管周圍有多量之分泌物，可先用生理食鹽水清潔後在消毒。\n\n(4) 將尿管以井字固定於大腿上方或下腹部(每次消毒皆需更換尿管黏貼部位，以避免該部位皮膚受損)。"
+                android:textSize="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

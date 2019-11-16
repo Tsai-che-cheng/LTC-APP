@@ -17,6 +17,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets { main { res.srcDirs = [ 'src/main/res/layout/ngf','src/main/res/layout/bodyclean','src/main/res/layout/lifecare','src/main/res/layout/lifesign','src/main/res/layout/turnbody','src/main/res/layout/bodyactive','src/main/res/layout/helpstairs','src/main/res/layout/assistmedical','src/main/res/layout/assistexcretion','src/main/res/layout/professioncare','src/main/res/layout/emergencyconcept','src/main/res/layout/deathbedpeaceful','src/main/res/layout/resource','src/main/res/layout/reference','src/main/res/layout/guideline','src/main/res/layout', 'src/main/res' ] } }
 }
 
 dependencies {

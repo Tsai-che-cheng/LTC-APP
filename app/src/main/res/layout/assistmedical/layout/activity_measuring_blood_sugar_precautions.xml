@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MeasuringBloodSugarPrecautions">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="(1) 血量要足夠。\n\n(2) 定期檢查試紙，勿受潮、勿過期。\n\n(3) 酒精棉片進行消毒後，需等酒精乾燥揮發後再協助採血。\n\n(4) 試紙號碼要與機器號碼一致。\n\n(5) 定期校正血糖測量儀器。"
+                android:textSize="40dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="監測血糖次數和時間：請依照醫師指示監測血糖次數。\n\n(1) 血糖控制良好者(糖化血色素&lt; 7﹪)：\n\n(A) 基本上為每週測量1~2次即可。\n\n(B) 測量時間為空腹、飯前、飯後或睡前擇一。\n\n(2) 血糖控制不良者(糖化血色素>8﹪以上)：\n\n(A) 基本上為每天驗血糖。\n\n(B) 測量時間為空腹、飯前、飯後及睡前，並依醫師指示為依據。\n\n(3) 需要增加測量血糖次數的情況：\n\n(A) 血糖過高（> 300 mg/dl）或過低（&lt; 70 mg/dl）時。\n\n(B) 進食與活動量與平日不同時，如外出旅行。"
+                android:textSize="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

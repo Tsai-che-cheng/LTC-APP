@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hc_app.wear_clothes">
+
+    <TextView
+        android:id="@+id/contect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="口訣：\n\n1.先穿較不方便的地方(如：遠側、中風無力側、骨折處等)。\n\n2.先脫較方便的地方(如：近側、沒受傷的健康處等)。
+"       android:textSize="40dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
