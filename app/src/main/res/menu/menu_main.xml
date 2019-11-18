@@ -14,7 +14,8 @@
     <item android:id="@+id/action_settings"
         android:title="@string/action_settings"
         android:orderInCategory="100"
-        app:showAsAction="never" />
+        app:showAsAction="never"
+        android:visible="false" />
     <item android:id="@+id/action_googleForms_Before"
         android:title="@string/action_googleForms_Before"
         android:orderInCategory="100"
