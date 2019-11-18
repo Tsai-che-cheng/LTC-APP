@@ -19,7 +19,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="肢體長時間受到壓迫，使該部位血流受阻缺氧，進而壞死。"
+                android:text="肢體長時間受到壓迫，導致該部位血流受到阻礙缺氧，進而造成組織壞死。"
                 android:textSize="40dp"/>
             <ImageView
                 android:layout_width="match_parent"
@@ -30,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="(1) 第一期壓傷：皮膚外觀完整，但局部施壓「該部位」，「該部位」發紅處久久不會消失。"
+                android:text="(1) 第一期壓傷：皮膚外觀完整，但局部部位因受到施壓，導致「該部位」發紅處久久不會消失。"
                 android:textSize="40dp"/>
             <ImageView
                 android:layout_width="match_parent"
@@ -63,7 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="(4) 第四期壓傷：「該部位」傷口可看到肌肉、骨頭等，且傷口滲液量多有異味；易有感染之風險。"
+                android:text="(4) 第四期壓傷：「該部位」傷口可看到肌肉、骨頭等，且傷口滲液量多有異味；「該部位」容易有感染之風險。"
                 android:textSize="40dp"/>
             <ImageView
                 android:layout_width="match_parent"

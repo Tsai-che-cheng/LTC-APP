@@ -18,7 +18,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="(1) 協助個案採左側臥位，或協助臀部抬高。\n\n(2) 灌入甘油後，約保留5~10分鐘軟化糞便以利排出。"
+                android:text="(1) 協助個案採左側臥位，或協助臀部抬高。\n\n(2) 灌入甘油後，約保留液體約5~10分鐘，待軟化糞便後以利其排出。"
                 android:textSize="40dp"/>
         </LinearLayout>
     </ScrollView>

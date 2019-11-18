@@ -17,7 +17,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="(1) 血量要足夠。\n\n(2) 定期檢查試紙，勿受潮、勿過期。\n\n(3) 酒精棉片消毒後，需等酒精乾燥揮發後再協助採血。\n\n(4) 試紙號碼要與機器號碼一致。\n\n(5) 定期校正血糖測量儀器。"
+                android:text="(1) 血量要足夠。\n\n(2) 定期檢查試紙，勿受潮、勿過期。\n\n(3) 酒精棉片進行消毒後，需等酒精乾燥揮發後再協助採血。\n\n(4) 試紙號碼要與機器號碼一致。\n\n(5) 定期校正血糖測量儀器。"
                 android:textSize="40dp"/>
             <TextView
                 android:layout_width="match_parent"

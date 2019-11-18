@@ -21,7 +21,7 @@
                 android:layout_marginTop="30dp"
                 android:text="(1) 增加個案飲食中的纖維攝取量，如：蔬菜、水果、全穀類等。
 \n\n(2) 若個案無水分之限制，成人每日應至少攝取2000~2500 cc的液體。
-\n\n(3) 協助個案腹部順時鐘腸道按摩，以利糞便排出。"
+\n\n(3) 協助個案腹部順時鐘(右下腹部開始，由上、左、下、右)方向進行腸道按摩，可利糞便排出。"
                 android:textSize="40dp"/>
         </LinearLayout>
     </ScrollView>

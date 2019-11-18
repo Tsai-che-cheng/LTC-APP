@@ -18,7 +18,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="(1) 測量前應先檢查有無耳垢，以免影響測量之結果。\n\n(2) 3歲以上至成人：耳廓向上向後拉，以使耳道平直。"
+                android:text="(1) 測量前耳朵前，應先檢查有無耳垢，以免影響體溫測量之結果。\n\n(2) 3歲以上至成人：耳廓向上向後拉，以使耳道平直。"
                 android:textSize="40dp"/>
             <ImageView
                 android:layout_width="match_parent"

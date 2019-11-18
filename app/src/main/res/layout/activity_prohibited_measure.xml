@@ -19,7 +19,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="有洗腎廔管之部位、乳房或腋下動過手術之部位、中風後之無力部位等。"
+                android:text="有洗腎廔管之部位、乳房或腋下動過淋巴手術之部位、中風後之無力部位等。"
                 android:textSize="40dp"/>
         </LinearLayout>
     </ScrollView>

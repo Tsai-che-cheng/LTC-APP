@@ -16,8 +16,6 @@ public class WebViewActivity_After extends AppCompatActivity{
     private WebView myWebView;
     private WebViewClient myWebViewClient;
 
-    private boolean formResponseFlag = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

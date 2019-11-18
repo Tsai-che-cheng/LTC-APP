@@ -29,7 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="(2) 牙線纏繞雙手中指上，中間保有約1公分牙線之距離。"
+                android:text="(2) 牙線纏繞雙手中指上，中間保有約1公分的牙線之距離。"
                 android:textSize="40dp"/>
             <ImageView
                 android:layout_width="match_parent"
@@ -46,7 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="(3) 使用食指與拇指指腹將牙線繃緊，沿著齒縫由牙冠頂部至牙齦處清潔"
+                android:text="(3) 使用食指與拇指的指腹將牙線繃緊，沿著齒縫由牙冠頂部至牙齦處清潔"
                 android:textSize="40dp"/>
             <ImageView
                 android:layout_width="match_parent"

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+    <color name="myColorPrimary">#008577</color>
+    <color name="myColorPrimaryDark">#00574B</color>
+    <color name="myColorAccent">#D81B60</color>
+    <color name="purple">#800080</color>
+    <color name="firebase_dark">#000000</color>
 </resources>

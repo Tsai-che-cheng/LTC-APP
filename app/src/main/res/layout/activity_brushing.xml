@@ -18,8 +18,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="(1) 牙刷與齒面呈45~60度並涵蓋牙齦處。
-\n\n(2) 每次來回刷2~3顆牙齒。
+                android:text="(1) 牙刷與齒面呈45~60度並需涵蓋牙齦處。
+\n\n(2) 每次來回清潔2~3顆牙齒。
 \n\n(3) 牙齒與牙齦間隙縫需將牙刷輕壓入清潔。
 \n\n(4) 牙齒內部與外部每個部位需至少刷10次左右。"
                 android:textSize="40dp"/>

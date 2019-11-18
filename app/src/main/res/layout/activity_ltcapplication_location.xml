@@ -16,9 +16,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="(1) 撥打1966長照服務專線轉至個縣市照顧管理中心。
+                android:text="(1) 撥打1966長照服務專線，1966可用語音方式轉至個縣市的照顧管理中心。
 \n\n(2) 親洽各縣市照顧管理中心。
-\n\n(3) 部分醫院設有出院準備服務小組。"
+\n\n(3) 部分醫院設有的出院準備服務小組。"
                 android:textSize="40dp"/>
         </LinearLayout>
     </ScrollView>

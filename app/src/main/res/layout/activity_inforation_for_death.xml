@@ -18,8 +18,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:text="(1) 申請人身分證。
-\n\n(2) 死亡者身分證或戶口名簿。
-\n\n(3) 個案曾就診醫院或診所所開立之相關病歷摘要或診斷書(有利於行政相驗作業流程)。"
+\n\n(2) 死亡者的身分證或戶口名簿。
+\n\n(3) 個案曾就診醫院或診所開立的相關病歷摘要或診斷書(可利於行政相驗作業流程)。"
                 android:textSize="40dp" />
         </LinearLayout>
     </ScrollView>

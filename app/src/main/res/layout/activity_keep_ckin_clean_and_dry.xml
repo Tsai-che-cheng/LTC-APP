@@ -18,7 +18,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="(1) 定期檢視並協助大小便失禁個案更換衣物及床單。\n(2) 老人或皮膚較脆弱者應定期塗抹嬰兒油或乳液，以維持皮膚濕潤度。"
+                android:text="(1) 大小便失禁個案需定期檢查並協助更換衣物及床單。\n(2) 老人或皮膚較脆弱者應定期塗抹嬰兒油或乳液，以維持皮膚濕潤度。"
                 android:textSize="40dp"/>
         </LinearLayout>
     </ScrollView>

@@ -40,8 +40,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="\n(5) 維持個案坐姿並觀察反應(怕個案有姿位性低血壓情形)。
-\n\n(6) 採半蹲姿勢，雙腳一前一後頂住個案膝關節，以雙手環抱個案腰部或抓住腰部褲帶協助離開床面並移位或站立。\n"
+                android:text="\n(5) 維持個案坐姿並觀察反應(怕出現姿位性低血壓情形)。
+\n\n(6) 採半蹲姿勢，雙腳一前一後站，前腳膝蓋頂住個案膝蓋，雙手環抱個案腰部或抓腰部褲帶，協助個案離開床面後再移位或站立。\n"
                 android:textSize="40dp"/>
             <ImageView
                 android:layout_width="match_parent"

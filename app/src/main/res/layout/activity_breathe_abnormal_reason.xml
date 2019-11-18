@@ -19,7 +19,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="(1) 呼吸過速：呼吸每分鐘 > 24次；常見原因：缺氧、發燒、出血、患有心肺疾病者等。\n\n(2) 呼吸過緩：呼吸每分鐘 &lt; 10次；常見原因：體溫過低、腦壓上升、使用鴉片類止痛藥物等。"
+                android:text="(1) 呼吸過速：呼吸每分鐘 > 24次；常見原因：缺氧、發燒、大量出血、患有心臟、肺部疾病者等。\n\n(2) 呼吸過緩：呼吸每分鐘 &lt; 10次；常見原因：體溫過低、腦部壓力上升、使用鴉片類止痛藥物等。"
                 android:textSize="40dp"/>
         </LinearLayout>
     </ScrollView>

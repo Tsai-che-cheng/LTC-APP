@@ -18,7 +18,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="藉由觀察個案胸口或腹部之一起一伏為一次呼吸來計算。"
+                android:text="可藉由觀察個案的胸口或腹部，一起一伏為一次呼吸計算。"
                 android:textSize="40dp"/>
         </LinearLayout>
     </ScrollView>

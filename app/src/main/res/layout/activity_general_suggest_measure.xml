@@ -19,21 +19,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="(1) 當個案服用的藥物中，有會影響其生命徵象數值變化之情況，建議測量次數至少一天一次或服用此藥物前、後。"
+                android:text="(1) 當個案服用的藥物中，有會影響生命徵象數值(血壓、心跳藥物)的變化，建議測量生命徵象的次數至少一天一次或是在服用藥物的前、後進行監測。"
                 android:textSize="40dp"/>
             <TextView
                 android:id="@+id/content1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="(2) 當個案病況改變或口頭表示身體不適時。"
+                android:text="(2) 當個案病況改變(發燒、跌倒等)或口頭表示身體不適時。"
                 android:textSize="40dp"/>
             <TextView
                 android:id="@+id/content2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="(3) 當個案病況不穩時，應密切監測個案生命徵象之變化，以及時就醫處理。"
+                android:text="(3) 當個案病況不穩時(癌症末期、剛進行手術後的個案)，應密切監測個案生命徵象之變化，以及時就醫處理。"
                 android:textSize="40dp"/>
         </LinearLayout>
     </ScrollView>

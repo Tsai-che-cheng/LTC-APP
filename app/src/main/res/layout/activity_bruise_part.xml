@@ -18,7 +18,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="(1) 平躺：肩部、手肘、臀部、足跟處等皮膚、骨頭受壓部位。"
+                android:text="(1) 平躺：肩膀、手肘、臀部、足跟處等皮膚、骨頭受壓部位。"
                 android:textSize="40dp"/>
             <ImageView
                 android:layout_width="match_parent"
@@ -29,7 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="(2) 側臥：臉部、耳朵、肩部、肋骨、臀部外側、膝蓋外側及、腳踝外側等皮膚、骨頭受壓部位。"
+                android:text="(2) 側臥：臉部、耳朵、肩膀、肋骨、臀部外側、膝蓋外側及、腳踝外側等皮膚、骨頭受壓部位。"
                 android:textSize="40dp"/>
             <ImageView
                 android:layout_width="match_parent"
@@ -40,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="(3) 坐臥/半坐臥：肩部、臀部、足跟等皮膚、骨頭受壓部位。"
+                android:text="(3) 坐臥/半坐臥：肩膀、臀部、足跟等皮膚、骨頭受壓部位。"
                 android:textSize="40dp"/>
             <ImageView
                 android:layout_width="match_parent"
