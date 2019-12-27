@@ -1,6 +1,6 @@
-# LTC-APP
+# HC-APP
 
-To take care for the  elderly.
+To take home care for the people in need.
 
 ## Getting Started
 
@@ -21,7 +21,7 @@ First, on your workspace git clone the project
 
 ```
 $ cd $WORKSPACE
-$ git clone https://github.com/Tsai-che-cheng/LTC-APP.git
+$ git clone https://github.com/Tsai-che-cheng/HC-APP.git
 ```
 
 Then, open the project on your Android Studio and compile it.

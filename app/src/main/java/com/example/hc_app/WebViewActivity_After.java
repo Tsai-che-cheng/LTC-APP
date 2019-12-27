@@ -1,8 +1,9 @@
 package com.example.hc_app;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.KeyEvent;
-import android.webkit.WebResourceResponse;
+import android.webkit.JavascriptInterface;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -15,8 +16,6 @@ public class WebViewActivity_After extends AppCompatActivity{
     private WebView myWebView;
     private WebViewClient myWebViewClient;
 
-    private boolean formResponseFlag = false;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,32 +27,38 @@ public class WebViewActivity_After extends AppCompatActivity{
             actionBar.hide();
         }
 
-        myWebView = findViewById(R.id.webview);
-        myWebViewClient = new WebViewClient(){
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                /*
-                if (url.contains("blog.csdn.net")){
-                    view.loadUrl("https://www.google.com");
-                }
-                */
-                // finish();
-                return false;
-            }
-            @Override
-            public WebResourceResponse shouldInterceptRequest(WebView view, String url) {
-                if ((url.startsWith("http") || url.startsWith("https")) && url.contains("formResponse")) {
-                    formResponseFlag = true;    // for future use...
+        class MyJavaScriptInterface
+        {
+            @JavascriptInterface
+            @SuppressWarnings("unused")
+            public void processHTML(String res)
+            {
+                // process the html as needed by the app
+                if (res.equals("Your response has been recorded.")) {
+                    Log.d("processHTML", "FINISH!!!!! ");
                     finish();
                 }
-                return super.shouldInterceptRequest(view, url);
+            }
+        }
+
+        myWebView = findViewById(R.id.webview);
+        myWebView.getSettings().setJavaScriptEnabled(true);
+        myWebView.addJavascriptInterface(new MyJavaScriptInterface(), "HTMLOUT");
+
+        myWebViewClient = new WebViewClient(){
+            @Override
+            public void onPageFinished(WebView view, String url)
+            {
+                /* This call inject JavaScript into the page which just finished loading. */
+                myWebView.loadUrl("javascript:window.HTMLOUT.processHTML(document.getElementsByClassName('freebirdFormviewerViewResponseConfirmationMessage')[0].textContent);");
             }
         };
 
         WebSettings webSettings = myWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         myWebView.setWebViewClient(myWebViewClient);
-        myWebView.loadUrl("https://docs.google.com/forms/d/e/1FAIpQLSdkL2Muv3f1Uae3elda9t5bKpGGgTNlC3YPMnEPuTlmyNnpGg/viewform?usp=sf_link");
+        myWebView.loadUrl("https://docs.google.com/forms/d/e/1FAIpQLSdkL2Muv3f1Uae3elda9t5bKpGGgTNlC3YPMnEPuTlmyNnpGg/viewform");
+
     }
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
