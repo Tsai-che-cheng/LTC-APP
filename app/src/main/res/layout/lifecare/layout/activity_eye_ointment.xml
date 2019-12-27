@@ -18,7 +18,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:text="藥膏需由內眥至外眥處輕擠入。"
+                android:text="藥膏需由內眼至外眼處輕擠入(避免臉部周圍細菌進入眼睛)。"
                 android:textSize="40dp"/>
         </LinearLayout>
     </ScrollView>
