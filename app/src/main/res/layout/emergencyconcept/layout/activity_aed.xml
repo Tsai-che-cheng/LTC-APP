@@ -21,6 +21,14 @@
 \n\n(2) 操作步驟：開啟AED電源，將貼片按AED指示貼在個案身上，等待AED分析心律(AED主要是針對心率不整來做電擊治療，所以當AED分析結果為正常人的心律後，則不會建議電擊)，依指示按下電擊按鈕。
 \n\n(3) 電擊完成後續動作：AED電擊後，應立即執行胸外按壓(CPR)，AED則每兩分鐘自動進行一次心律分析；胸外按壓(CPR)暫停只有在AED分析心律的那幾秒鐘，除此之外，應反覆進行胸外按壓(CPR)及AED心律分析直到個案恢復正常呼吸或有人接手(救護人員到達)為止。"
                 android:textSize="40dp" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:onClick="youtube"
+                android:text="示範影片\n(要開網路喔)"
+                android:textSize="60dp" />
         </LinearLayout>
     </ScrollView>
 

@@ -4,10 +4,14 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import java.util.Calendar;
 
 public class CarryingBloodMeter extends AppCompatActivity {
 
@@ -15,6 +19,21 @@ public class CarryingBloodMeter extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carrying_blood_meter);
+
+        //=========after 30 day to do questionnaire start========
+        SharedPreferences sharecheck = getSharedPreferences("check", MODE_PRIVATE);
+        int firstloginofday = sharecheck.getInt("day", 0);
+        int saveInt = sharecheck.getInt("write", 0);
+        Calendar c = Calendar.getInstance();
+        int today = c.get(Calendar.DAY_OF_YEAR);
+        SharedPreferences.Editor editor = sharecheck.edit();
+        if (today-firstloginofday>=30 && saveInt ==100) {
+            editor.putInt("write", 200);//put data
+            editor.commit();
+            startActivity(new Intent(this, WebViewActivity_After.class));
+            finish();
+        }
+        //=========after 30 day to do questionnaire end========
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -58,5 +77,10 @@ public class CarryingBloodMeter extends AppCompatActivity {
     public void mbsp  (View v) {
         Intent it = new Intent(CarryingBloodMeter.this,MeasuringBloodSugarPrecautions.class);
         startActivity(it);
+    }
+    public void youtube  (View v) {
+        Uri uri=Uri.parse("https://www.youtube.com/watch?v=61ziz7h-_LQ");
+        Intent i=new Intent(Intent.ACTION_VIEW,uri);
+        startActivity(i);
     }
 }

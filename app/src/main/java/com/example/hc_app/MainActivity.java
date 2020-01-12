@@ -19,18 +19,23 @@ import androidx.appcompat.widget.Toolbar;
 
 import com.firebase.ui.auth.AuthUI;
 import com.firebase.ui.auth.IdpResponse;
+import com.google.android.gms.measurement.module.Analytics;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import android.content.SharedPreferences;//use Preference
 
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.List;
 //import android.util.Log;
 
 public class MainActivity extends AppCompatActivity {
 
+    private FirebaseAnalytics mFirebaseAnalytics;
     private static final int RC_SIGN_IN = 123;
 
     @Override
@@ -38,12 +43,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+
+
+        Bundle bundle = new Bundle();
+        bundle.putString(FirebaseAnalytics.Param.METHOD, "0");
+        mFirebaseAnalytics.logEvent(FirebaseAnalytics.Event.LOGIN, bundle);
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+
         if (user != null) {
+            mFirebaseAnalytics.setUserId(user.getEmail());
             toolbar.setTitle("嗨，" + user.getDisplayName());
         }
         setSupportActionBar(toolbar);
+
+
 
 //        ### Original fab Example ###
 //        FloatingActionButton fab = findViewById(R.id.fab);
@@ -54,7 +70,20 @@ public class MainActivity extends AppCompatActivity {
 //                        .setAction("Action", null).show();
 //            }
 //        });
-
+        //=========after 30 day to do questionnaire start========
+        SharedPreferences sharecheck = getSharedPreferences("check", MODE_PRIVATE);
+        int firstloginofday = sharecheck.getInt("day", 0);
+        int saveInt = sharecheck.getInt("write", 0);
+        Calendar c = Calendar.getInstance();
+        int today = c.get(Calendar.DAY_OF_YEAR);
+        SharedPreferences.Editor editor = sharecheck.edit();
+        if (today-firstloginofday>=30 && saveInt ==100) {
+            editor.putInt("write", 200);//put data
+            editor.commit();
+            startActivity(new Intent(this, WebViewActivity_After.class));
+            finish();
+        }
+        //=========after 30 day to do questionnaire end========
 
         // PreferenceManager.setDefaultValues(this, R.xml.root_preferences, false);
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
@@ -92,6 +121,8 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
 //        String signaturePref = sharedPref.getString(SettingsActivity.KEY_PREF_SIGNATURE, "adsuser");
         // Toast.makeText(this, "Welcome, " + signaturePref, Toast.LENGTH_SHORT).show();
+
+
     }
 
     public void GOP_click(View v) {
@@ -152,6 +183,42 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             return true;
         }
+        if (id == R.id.action_checkShareInitial) {
+            SharedPreferences sharecheck = getSharedPreferences("check", MODE_PRIVATE);
+            // int firstloginofday = sharecheck.getInt("day", 0);
+            // int saveInt = sharecheck.getInt("write", 0);
+//            Calendar c = Calendar.getInstance();
+//            int today = c.get(Calendar.DAY_OF_YEAR);
+            SharedPreferences.Editor editor = sharecheck.edit();
+//            Log.d("processHTML", "today: " + today);
+            editor.putInt("day", 0);//put data
+            editor.putInt("write", 0);//put data
+            editor.commit();
+            return true;
+        }
+        if (id == R.id.action_checkShareAfter) {
+            SharedPreferences sharecheck = getSharedPreferences("check", MODE_PRIVATE);
+            // int firstloginofday = sharecheck.getInt("day", 0);
+            // int saveInt = sharecheck.getInt("write", 0);
+            // Calendar c = Calendar.getInstance();
+            // int today = c.get(Calendar.DAY_OF_YEAR);
+            SharedPreferences.Editor editor = sharecheck.edit();
+            editor.putInt("day", -31);//put data
+            editor.putInt("write", 100);//put data
+            editor.commit();
+            return true;
+        }
+        if (id == R.id.action_checkshareFinal) {
+            SharedPreferences sharecheck = getSharedPreferences("check", MODE_PRIVATE);
+//            int firstloginofday = sharecheck.getInt("day", 0);
+//            int saveInt = sharecheck.getInt("write", 0);
+//            Calendar c = Calendar.getInstance();
+//            int today = c.get(Calendar.DAY_OF_YEAR);
+            SharedPreferences.Editor editor = sharecheck.edit();
+            editor.putInt("write", 200);//put data
+            editor.commit();
+            return true;
+        }
 
 
         return super.onOptionsItemSelected(item);
@@ -204,8 +271,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void signIn() {
-        startActivity(new Intent(this, SigninActivity.class));
-        finish();
+        Intent intent = new Intent();
+        intent.setClass(this, SigninActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
     }
 
     @Override

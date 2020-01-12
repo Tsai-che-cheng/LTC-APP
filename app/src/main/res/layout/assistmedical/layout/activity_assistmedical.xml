@@ -28,7 +28,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="cbm"
-                android:text="攜帶式血糖機驗血糖並錄及異常通報"
+                android:layout_marginTop="30dp"
+                android:text="攜帶式血糖機\n驗血糖記錄及異常通報"
                 android:textSize="60dp"/>
             <Button
                 android:id="@+id/SimpleCareForWoundSecretions"
@@ -36,6 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="scfws"
+                android:layout_marginTop="30dp"
                 android:text="傷口分泌物簡易照顧處理"
                 android:textSize="60dp"/>
             <Button
@@ -44,14 +46,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="bpc"
-                android:text="身上管路清潔(鼻胃管、尿管護理)"
-                android:textSize="60dp"/>
+                android:layout_marginTop="30dp"
+                android:text="身上管路清潔\n(鼻胃管、尿管)"
+                android:textSize="55dp"/>
             <Button
                 android:id="@+id/OralSuction"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="os"
+                android:layout_marginTop="30dp"
                 android:text="口腔抽吸"
                 android:textSize="60dp"/>
         </LinearLayout>

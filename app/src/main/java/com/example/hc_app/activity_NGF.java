@@ -1,13 +1,16 @@
 package com.example.hc_app;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
+import android.net.Uri;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Calendar;
 
 public class activity_NGF extends AppCompatActivity {
 
@@ -15,6 +18,21 @@ public class activity_NGF extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity__ngf);
+
+        //=========after 30 day to do questionnaire start========
+        SharedPreferences sharecheck = getSharedPreferences("check", MODE_PRIVATE);
+        int firstloginofday = sharecheck.getInt("day", 0);
+        int saveInt = sharecheck.getInt("write", 0);
+        Calendar c = Calendar.getInstance();
+        int today = c.get(Calendar.DAY_OF_YEAR);
+        SharedPreferences.Editor editor = sharecheck.edit();
+        if (today-firstloginofday>=30 && saveInt ==100) {
+            editor.putInt("write", 200);//put data
+            editor.commit();
+            startActivity(new Intent(this, WebViewActivity_After.class));
+            finish();
+        }
+        //=========after 30 day to do questionnaire end========
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -47,8 +65,9 @@ public class activity_NGF extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-    public void ngfv  (View v) {
-        Intent it = new Intent(activity_NGF.this, NGFVideo.class);
-        startActivity(it);
+    public void youtube  (View v) {
+        Uri uri=Uri.parse("https://www.youtube.com/watch?v=yuvRc1aBc_w");
+        Intent i=new Intent(Intent.ACTION_VIEW,uri);
+        startActivity(i);
     }
 }

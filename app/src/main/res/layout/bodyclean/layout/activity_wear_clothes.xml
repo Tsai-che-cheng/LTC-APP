@@ -6,11 +6,25 @@
     android:layout_height="match_parent"
     tools:context="com.example.hc_app.wear_clothes">
 
-    <TextView
-        android:id="@+id/contect"
+    <LinearLayout
+        android:id="@+id/linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="口訣：\n\n1.先穿較不方便的地方(如：遠側、中風無力側、骨折處等)。\n\n2.先脫較方便的地方(如：近側、沒受傷的健康處等)。
-"       android:textSize="40dp"/>
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/contect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="口訣：\n\n1.先穿較不方便的地方(如：遠側、中風無力側、骨折處等)。\n\n2.先脫較方便的地方(如：近側、沒受傷的健康處等)。"
+            android:textSize="40dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:onClick="youtube"
+            android:text="示範影片\n(要開網路喔)"
+            android:textSize="60dp" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -20,14 +20,13 @@
                 android:text="(1) 一手固定鼻胃管，一手由下往上施開固定膠布。\n\n(2) 每日清潔時，需將鼻胃管輕轉換方向(如：順時間轉45度)，避免管子長時間壓迫形成鼻子周圍皮膚壓傷。\n\n(3) 以生理食鹽水沾濕的棉枝清除鼻胃管上膠痕。\n\n(4) 更換新棉枝清潔鼻腔、管壁及鼻樑。\n\n(5) 更換固定位置並以膠布固定管路。"
                 android:textSize="40dp"/>
             <Button
-                android:id="@+id/NGVideo"
-                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:onClick="ngv"
-                android:text="衛教影片"
-                android:textSize="60dp"/>
+                android:layout_weight="1"
+                android:onClick="youtube"
+                android:text="示範影片\n(要開網路喔)"
+                android:textSize="60dp" />
         </LinearLayout>
     </ScrollView>
 

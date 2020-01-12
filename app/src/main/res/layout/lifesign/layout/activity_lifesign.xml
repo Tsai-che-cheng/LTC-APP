@@ -29,6 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="btr"
+                android:layout_marginTop="30dp"
                 android:text="體溫記錄及異常通報"
                 android:textSize="60dp"/>
             <Button
@@ -36,6 +37,7 @@
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
                 android:onClick="pr"
                 android:text="脈搏記錄及異常通報"
                 android:textSize="60dp"/>
@@ -45,6 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="br"
+                android:layout_marginTop="30dp"
                 android:text="呼吸記錄及異常通報"
                 android:textSize="60dp"/>
             <Button
@@ -53,6 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:onClick="bpr"
+                android:layout_marginTop="30dp"
                 android:text="血壓記錄及異常通報"
                 android:textSize="60dp"/>
 

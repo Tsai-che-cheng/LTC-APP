@@ -4,10 +4,14 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import java.util.Calendar;
 
 public class ShiftAndPlacement extends AppCompatActivity {
 
@@ -16,6 +20,20 @@ public class ShiftAndPlacement extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shift_and_placement);
 
+        //=========after 30 day to do questionnaire start========
+        SharedPreferences sharecheck = getSharedPreferences("check", MODE_PRIVATE);
+        int firstloginofday = sharecheck.getInt("day", 0);
+        int saveInt = sharecheck.getInt("write", 0);
+        Calendar c = Calendar.getInstance();
+        int today = c.get(Calendar.DAY_OF_YEAR);
+        SharedPreferences.Editor editor = sharecheck.edit();
+        if (today-firstloginofday>=30 && saveInt ==100) {
+            editor.putInt("write", 200);//put data
+            editor.commit();
+            startActivity(new Intent(this, WebViewActivity_After.class));
+            finish();
+        }
+        //=========after 30 day to do questionnaire end========
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -55,5 +73,10 @@ public class ShiftAndPlacement extends AppCompatActivity {
     public void hmtcp  (View v) {
         Intent it = new Intent(ShiftAndPlacement.this, HelpMaintainTheCorrectPosture.class);
         startActivity(it);
+    }
+    public void youtube  (View v) {
+        Uri uri=Uri.parse("https://www.youtube.com/watch?v=FKyybvl697Y");
+        Intent i=new Intent(Intent.ACTION_VIEW,uri);
+        startActivity(i);
     }
 }

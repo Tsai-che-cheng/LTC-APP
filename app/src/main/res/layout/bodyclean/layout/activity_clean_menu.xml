@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.hc_app.clean_menu">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,19 +14,19 @@
             android:id="@+id/CleanHard"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
             android:layout_weight="1"
             android:onClick="cleanhard"
-            android:layout_marginTop="80dp"
             android:text="床上洗頭"
             android:textSize="60dp" />
         <Button
             android:id="@+id/CleanBody"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="100dp"
+            android:layout_marginTop="150dp"
             android:layout_weight="1"
             android:onClick="cleanbody"
             android:text="床上洗澡"
-            android:textSize="60dp"/>
+            android:textSize="60dp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

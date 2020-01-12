@@ -4,9 +4,12 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import java.util.Calendar;
 
 public class HospiceCareSpirit extends AppCompatActivity {
 
@@ -15,6 +18,20 @@ public class HospiceCareSpirit extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hospice_care_spirit);
 
+        //=========after 30 day to do questionnaire start========
+        SharedPreferences sharecheck = getSharedPreferences("check", MODE_PRIVATE);
+        int firstloginofday = sharecheck.getInt("day", 0);
+        int saveInt = sharecheck.getInt("write", 0);
+        Calendar c = Calendar.getInstance();
+        int today = c.get(Calendar.DAY_OF_YEAR);
+        SharedPreferences.Editor editor = sharecheck.edit();
+        if (today-firstloginofday>=30 && saveInt ==100) {
+            editor.putInt("write", 200);//put data
+            editor.commit();
+            startActivity(new Intent(this, WebViewActivity_After.class));
+            finish();
+        }
+        //=========after 30 day to do questionnaire end========
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {

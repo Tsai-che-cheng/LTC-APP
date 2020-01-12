@@ -20,6 +20,14 @@
                 android:layout_marginTop="30dp"
                 android:text="當個案預使用輪椅或離開輪椅時，皆需注意輪椅是否已固定及腳踏板是否收起，避免絆倒意外發生。"
                 android:textSize="40dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:onClick="youtube"
+                android:text="示範影片\n(要開網路喔)"
+                android:textSize="60dp" />
         </LinearLayout>
     </ScrollView>
 

@@ -44,14 +44,13 @@
                 android:layout_marginTop="30dp"
                 android:src="@mipmap/lifecare21" />
             <Button
-                android:id="@+id/PPCVideo"
-                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
-                android:onClick="ppcv"
-                android:text="衛教影片"
-                android:textSize="60dp"/>
+                android:layout_weight="1"
+                android:onClick="youtube"
+                android:text="示範影片\n(要開網路喔)"
+                android:textSize="60dp" />
         </LinearLayout>
     </ScrollView>
 

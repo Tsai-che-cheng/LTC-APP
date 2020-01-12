@@ -13,9 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".SigninActivity">
-        </activity>
+        <activity android:name=".SigninActivity"></activity>
         <activity
             android:name=".Reference"
             android:label="參考資料" />
@@ -40,18 +38,6 @@
         <activity
             android:name=".Resource"
             android:label="政府長照資源" />
-        <activity
-            android:name=".FCVideo"
-            android:label="女性尿管護理" />
-        <activity
-            android:name=".NGVideo"
-            android:label="鼻胃管護理" />
-        <activity
-            android:name=".NGFVideo"
-            android:label="管灌餵食" />
-        <activity
-            android:name=".PPCVideo"
-            android:label="會陰沖洗" />
         <activity
             android:name=".UseGlycerinBall"
             android:label="甘油球通便" />

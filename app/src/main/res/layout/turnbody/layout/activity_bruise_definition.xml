@@ -32,55 +32,30 @@
                 android:layout_marginTop="30dp"
                 android:text="(1) 第一期壓傷：皮膚外觀完整，但局部部位因受到施壓，導致「該部位」發紅處久久不會消失。"
                 android:textSize="40dp"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="400dp"
-                android:layout_marginTop="30dp"
-                android:src="@mipmap/bruise2"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:text="(2) 第二期壓傷：「該部位」已有水泡或濕潤破皮傷口，且個案會有疼痛情形。"
                 android:textSize="40dp"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="400dp"
-                android:layout_marginTop="30dp"
-                android:src="@mipmap/bruise3"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:text="(3) 第三期壓傷：「該部位」傷口可看到脂肪組織或腐肉、痂皮等。"
                 android:textSize="40dp"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="400dp"
-                android:layout_marginTop="30dp"
-                android:src="@mipmap/bruise4"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:text="(4) 第四期壓傷：「該部位」傷口可看到肌肉、骨頭等，且傷口滲液量多有異味；「該部位」容易有感染之風險。"
                 android:textSize="40dp"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="400dp"
-                android:layout_marginTop="30dp"
-                android:src="@mipmap/bruise5"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:text="(5) 無法分期壓傷：「該部位」傷口出現黑色痂皮，無法判斷裡面狀況。"
                 android:textSize="40dp"/>
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="400dp"
-                android:layout_marginTop="30dp"
-                android:src="@mipmap/bruise6"/>
         </LinearLayout>
     </ScrollView>
 

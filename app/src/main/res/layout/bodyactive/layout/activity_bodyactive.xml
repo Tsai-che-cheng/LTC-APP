@@ -46,14 +46,16 @@
                 android:onClick="wm"
                 android:text="腕部運動"
                 android:textSize="60dp"/>
+
             <Button
                 android:id="@+id/ThumbMetacarpophalangealJoint"
-                android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:onClick="tmj"
                 android:text="手部-拇指\n掌指關節運動"
-                android:textSize="60dp"/>
+                android:textSize="60dp" />
+
             <Button
                 android:id="@+id/ThumbKnuckleMovement"
                 android:layout_weight="1"
@@ -101,6 +103,13 @@
                 android:layout_height="wrap_content"
                 android:onClick="tm"
                 android:text="趾部運動"
+                android:textSize="60dp"/>
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="body"
+                android:text="示範影片\n(要開網路喔)"
                 android:textSize="60dp"/>
         </LinearLayout>
     </ScrollView>

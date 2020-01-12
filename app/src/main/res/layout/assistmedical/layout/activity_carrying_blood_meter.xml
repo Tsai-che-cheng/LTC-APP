@@ -41,6 +41,14 @@
                 android:layout_marginVertical="30dp"
                 android:text="測量血糖注意事項"
                 android:textSize="60dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:onClick="youtube"
+                android:text="示範影片\n(要開網路喔)"
+                android:textSize="60dp" />
     </LinearLayout>
 </ScrollView>
 

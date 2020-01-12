@@ -21,7 +21,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="fbct"
                 android:text="異物哽塞處理"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="30dp"
                 android:textSize="60dp"/>
             <Button
                 android:id="@+id/CPR"
@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="cpr"
                 android:text="心肺復甦術(CPR)-民眾版"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="80dp"
                 android:textSize="60dp"/>
             <Button
                 android:id="@+id/AED"
@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="aed"
                 android:text="自動體外心臟電擊去顫器(AED)"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="80dp"
                 android:textSize="60dp"/>
         </LinearLayout>
     </ScrollView>

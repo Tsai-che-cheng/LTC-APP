@@ -16,12 +16,31 @@
         android:orderInCategory="100"
         app:showAsAction="never"
         android:visible="false" />
+
     <item android:id="@+id/action_googleForms_Before"
         android:title="@string/action_googleForms_Before"
         android:orderInCategory="100"
-        app:showAsAction="never" />
+        app:showAsAction="never"
+        android:visible="false" />
     <item android:id="@+id/action_googleForms_After"
         android:title="@string/action_googleForms_After"
         android:orderInCategory="100"
-        app:showAsAction="never" />
+        app:showAsAction="never"
+        android:visible="false" />
+
+    <item android:id="@+id/action_checkShareInitial"
+        android:title="Initial Status"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:visible="false" />
+    <item android:id="@+id/action_checkShareAfter"
+        android:title="30 days later"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:visible="false" />
+    <item android:id="@+id/action_checkshareFinal"
+        android:title="Final Status"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:visible="false" />
 </menu>

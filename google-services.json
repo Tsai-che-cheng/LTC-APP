@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "141579986999",
+    "firebase_url": "https://levi947tw.firebaseio.com",
+    "project_id": "levi947tw",
+    "storage_bucket": "levi947tw.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:141579986999:android:b6ea374f2ff11cc06877b2",
+        "android_client_info": {
+          "package_name": "com.example.hc_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "141579986999-t41gl93pns081or172kgv2ubin7dv448.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hc_app",
+            "certificate_hash": "9d73e34f5b8848036524d9313eded97a2e2f60a7"
+          }
+        },
+        {
+          "client_id": "141579986999-rdgsqlj9e682aikrnj8ir3qalv3bh0l8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZjtPMxw5vB1qJVLtxPkET4Exy8btnQuw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "141579986999-rdgsqlj9e682aikrnj8ir3qalv3bh0l8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

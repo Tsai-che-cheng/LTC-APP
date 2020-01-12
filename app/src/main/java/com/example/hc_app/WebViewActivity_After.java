@@ -1,5 +1,7 @@
 package com.example.hc_app;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -10,6 +12,8 @@ import android.webkit.WebViewClient;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import java.util.Calendar;
 
 public class WebViewActivity_After extends AppCompatActivity{
 
@@ -34,7 +38,17 @@ public class WebViewActivity_After extends AppCompatActivity{
             public void processHTML(String res)
             {
                 // process the html as needed by the app
-                if (res.equals("Your response has been recorded.")) {
+                if (res != "") {
+                    Calendar c = Calendar.getInstance();//get calendar
+                    int today = c.get(Calendar.DAY_OF_YEAR);//get day of year
+
+                    SharedPreferences sharecheck = getSharedPreferences("check", MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharecheck.edit();
+                    int saveInt = sharecheck.getInt("write", 0);
+
+                    editor.putInt("write", 200);//put data
+                    editor.commit();
+
                     Log.d("processHTML", "FINISH!!!!! ");
                     finish();
                 }
@@ -62,7 +76,9 @@ public class WebViewActivity_After extends AppCompatActivity{
     }
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if(keyCode == KeyEvent.KEYCODE_BACK && myWebView.canGoBack()){
+        if(keyCode == KeyEvent.KEYCODE_BACK){
+            //Intent it = new Intent(WebViewActivity_After.this, MainActivity.class);
+            //startActivity(it);
             myWebView.goBack();
             return true;
         }
